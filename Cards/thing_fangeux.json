@@ -1,0 +1,45 @@
+{
+    "id": "amongus_fangeux",
+    "nameOverride": "Fangeux",
+    "descriptionOverride": "un petit amalgame de chaires et de morceaux d'animaux assemblé lamentablement.",
+    "value": -1,
+    "type": "mobs",
+    "icon": "card_fangeux.png",
+    "script": "AmongUsNS.ThingLitle",
+    "_HealthPoints": 5,
+    "_IsAggressive": true,
+    "_BaseAttackType": "Magic",
+    "_BaseCombatStats": {
+        "MaxHealth": 5,
+        "AttackSpeed": 1,
+        "HitChance": 1,
+        "AttackDamage": 1,
+        "Defence": 2,
+        "AttackSpeedIncrement": 0,
+        "HitChanceIncrement": 0,
+        "AttackDamageIncrement": 0,
+        "DefenceIncrement": 0,
+        "SpecialHits": [
+            {
+                "Chance": 10,
+                "HitType": "Invulnerable",
+                "Target": "Self"
+            }
+        ]
+    },
+    "_Drops": {
+        "type": "Chances",
+        "CardsInPack": 1,
+        "chances": [
+            {
+                "id": "goop",
+                "chance": 5,
+                "hasMaxCount": false,
+                "maxCountToGive": 1,
+                "Prerequisite": ""
+            }
+        ]
+
+    }
+
+}

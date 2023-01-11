@@ -1,0 +1,23 @@
+{
+    "id": "blueprint_amongus_spellgiant",
+    "nameOverride": "Idée: Domifala",
+    "nameTerm": "",
+    "group": "resources",
+    "icon": "card_spell_giant.png",
+    "stackText": "",
+    "hideFromIdeasTab": false,
+    "hideFromCardopedia": false,
+    "isInvention": false,
+    "needsExactMatch": true,
+    "subprints": [
+        {
+            "requiredCards": "amongus_spell_speed,amongus_spell_still, iron_bar,amongus_dummy_magic_user ",
+            "cardsToRemove": "",
+            "resultCard": "amongus_spell_Giant",
+            "extraResultCards": "",
+            "time": 20,
+            "statusOverride": "Mise au point d'un sortilège...",
+            "statusTerm": ""
+        }
+    ]
+}

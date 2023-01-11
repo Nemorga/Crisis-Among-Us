@@ -1,0 +1,23 @@
+{
+    "id": "blueprint_amongus_spellskeleton",
+    "nameOverride": "Idée: Do'Resido",
+    "nameTerm": "",
+    "group": "resources",
+    "icon": "card_createdskeleton.png",
+    "stackText": "",
+    "hideFromIdeasTab": false,
+    "hideFromCardopedia": false,
+    "isInvention": false,
+    "needsExactMatch": true,
+    "subprints": [
+        {
+            "requiredCards": "amongus_spell_Heal, amongus_spell_kill, bone, wizard",
+            "cardsToRemove": "",
+            "resultCard": "amongus_spell_Skeleton",
+            "extraResultCards": "",
+            "time": 15,
+            "statusOverride": "Mise au point d'un sortilège...",
+            "statusTerm": ""
+        }
+    ]
+}

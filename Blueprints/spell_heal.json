@@ -1,0 +1,23 @@
+{
+    "id": "blueprint_amongus_spellheal",
+    "nameOverride": "Idée: Fa'Rerela",
+    "nameTerm": "",
+    "group": "resources",
+    "icon": "card_healing_spell.png",
+    "stackText": "",
+    "hideFromIdeasTab": false,
+    "hideFromCardopedia": false,
+    "isInvention": false,
+    "needsExactMatch": true,
+    "subprints": [
+        {
+            "requiredCards": "amongus_spell_basic, stick, mage",
+            "cardsToRemove": "",
+            "resultCard": "amongus_spell_Heal",
+            "extraResultCards": "",
+            "time": 10,
+            "statusOverride": "Mise au point d'un sortilège...",
+            "statusTerm": ""
+        }
+    ]
+}

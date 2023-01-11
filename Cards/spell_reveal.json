@@ -1,0 +1,12 @@
+{
+    "id": "amongus_spell_reveal",
+    "nameOverride": "<i><b>Misolmi'Sol</b></i> ",
+    "descriptionOverride": "Pendant une lune, révèle si le villageois ciblé est un monstre déguisé",
+    "value": -1,
+    "type": "resources",
+    "icon": "card_reveal.png",
+    "script": "AmongUsNS.SpellReveal",
+    "_Charges": 1,
+    "_ChargesMax": 1
+}
+ 

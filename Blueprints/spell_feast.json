@@ -1,0 +1,23 @@
+{
+    "id": "blueprint_amongus_spellfeast",
+    "nameOverride": "Idée: Dosisolmi",
+    "nameTerm": "",
+    "group": "resources",
+    "icon": "card_spell_feast.png",
+    "stackText": "",
+    "hideFromIdeasTab": false,
+    "hideFromCardopedia": false,
+    "isInvention": false,
+    "needsExactMatch": true,
+    "subprints": [
+        {
+            "requiredCards": "amongus_spell_create_food,amongus_spell_cleanse, magic_dust, mage",
+            "cardsToRemove": "",
+            "resultCard": "amongus_spell_Feast",
+            "extraResultCards": "",
+            "time": 20,
+            "statusOverride": "Mise au point d'un sortilège...",
+            "statusTerm": ""
+        }
+    ]
+}

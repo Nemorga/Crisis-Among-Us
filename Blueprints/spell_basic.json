@@ -1,0 +1,23 @@
+{
+    "id": "blueprint_amongus_basicspell",
+    "nameOverride": "Idée: Dosisol'Re",
+    "nameTerm": "",
+    "group": "resources",
+    "icon": "card_basic_spell.png",
+    "hideFromIdeasTab": false,
+    "hideFromCardopedia": false,
+    "isInvention": false,
+    "needsExactMatch": true,
+    "stackText": "",
+    "subprints": [
+        {
+            "requiredCards": "magic_dust, flint, amongus_dummy_magic_user",
+            "cardsToRemove": "",
+            "resultCard": "amongus_spell_basic",
+            "extraResultCards": "",
+            "time": 5,
+            "statusOverride": "Mise au point d'un sortilège...",
+            "statusTerm": ""
+        }
+    ]
+}

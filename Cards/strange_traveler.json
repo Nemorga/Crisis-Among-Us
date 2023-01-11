@@ -1,0 +1,192 @@
+{
+    "id": "amongus_strange_traveler",
+    "nameOverride": "Voyageur étrange",
+    "descriptionOverride": "Un vagabond qui s'est invité parmis vous, que veut-il donc?",
+    "value": -1,
+    "type": "resources",
+    "icon": "card_strange_traveler.png",
+    "script": "AmongUsNS.Traveler",
+    "_spells": {
+        "type": "Chances",
+        "CardsInPack": 5,
+        "chances": [
+
+            {
+                "id": "blueprint_amongus_spellstilll",
+                "chance": 50,
+                "hasMaxCount": true,
+                "maxCountToGive": 1,
+                "Prerequisite": ""
+            },
+            {
+                "id": "blueprint_amongus_spellheal",
+                "chance": 50,
+                "hasMaxCount": true,
+                "maxCountToGive": 1,
+                "Prerequisite": ""
+            },
+            {
+                "id": "blueprint_amongus_spellskeleton",
+                "chance": 50,
+                "hasMaxCount": true,
+                "maxCountToGive": 1,
+                "Prerequisite": ""
+            },
+            {
+                "id": "blueprint_amongus_spellfood",
+                "chance": 50,
+                "hasMaxCount": true,
+                "maxCountToGive": 1,
+                "Prerequisite": ""
+            },
+            {
+                "id": "blueprint_amongus_spellcleanse",
+                "chance": 50,
+                "hasMaxCount": true,
+                "maxCountToGive": 1,
+                "Prerequisite": ""
+            },
+            {
+                "id": "blueprint_amongus_basicspell",
+                "chance": 250,
+                "hasMaxCount": true,
+                "maxCountToGive": 1,
+                "Prerequisite": ""
+            },
+            {
+                "id": "amongus_spell_basic",
+                "chance": 30,
+                "hasMaxCount": false,
+                "maxCountToGive": 1,
+                "Prerequisite": "blueprint_amongus_basicspell"
+            },
+            {
+                "id": "amongus_spell_cleanse",
+                "chance": 10,
+                "hasMaxCount": false,
+                "maxCountToGive": 1,
+                "Prerequisite": "blueprint_amongus_spellcleanse"
+            },
+            {
+                "id": "amongus_spell_create_food",
+                "chance": 10,
+                "hasMaxCount": false,
+                "maxCountToGive": 1,
+                "Prerequisite": "blueprint_amongus_spellfood"
+            },
+            {
+                "id": "amongus_spell_Skeleton",
+                "chance": 10,
+                "hasMaxCount": false,
+                "maxCountToGive": 1,
+                "Prerequisite": "blueprint_amongus_spellskeleton"
+            },
+            {
+                "id": "amongus_spell_still",
+                "chance": 10,
+                "hasMaxCount": false,
+                "maxCountToGive": 1,
+                "Prerequisite": "blueprint_amongus_spellstilll"
+            },
+            {
+                "id": "amongus_spell_Heal",
+                "chance": 10,
+                "hasMaxCount": false,
+                "maxCountToGive": 1,
+                "Prerequisite": "blueprint_amongus_spellheal"
+            }
+        ]
+
+    },
+    "_resources": {
+        "type": "Chances",
+        "CardsInPack": 10,
+        "chances": [
+            {
+                "id": "plank",
+                "chance": 15,
+                "hasMaxCount": false,
+                "maxCountToGive": 1,
+                "Prerequisite": ""
+            },
+            {
+                "id": "brick",
+                "chance": 15,
+                "hasMaxCount": false,
+                "maxCountToGive": 2,
+                "Prerequisite": ""
+            },
+            {
+                "id": "iron_ore",
+                "chance": 25,
+                "hasMaxCount": false,
+                "maxCountToGive": 2,
+                "Prerequisite": ""
+            },
+            {
+                "id": "iron_bar",
+                "chance": 10,
+                "hasMaxCount": false,
+                "maxCountToGive": 2,
+                "Prerequisite": ""
+            },
+            {
+                "id": "gold_ore",
+                "chance": 10,
+                "hasMaxCount": false,
+                "maxCountToGive": 2,
+                "Prerequisite": ""
+            },
+            {
+                "id": "wood",
+                "chance": 20,
+                "hasMaxCount": false,
+                "maxCountToGive": 2,
+                "Prerequisite": ""
+            },
+            {
+                "id": "stone",
+                "chance": 20,
+                "hasMaxCount": false,
+                "maxCountToGive": 2,
+                "Prerequisite": ""
+            },
+            {
+                "id": "magic_dust",
+                "chance": 20,
+                "hasMaxCount": false,
+                "maxCountToGive": 2,
+                "Prerequisite": ""
+            },
+            {
+                "id": "bone",
+                "chance": 15,
+                "hasMaxCount": false,
+                "maxCountToGive": 2,
+                "Prerequisite": ""
+            },
+            {
+                "id": "glass",
+                "chance": 10,
+                "hasMaxCount": false,
+                "maxCountToGive": 2,
+                "Prerequisite": ""
+            },
+            {
+                "id": "fabric",
+                "chance": 15,
+                "hasMaxCount": false,
+                "maxCountToGive": 2,
+                "Prerequisite": ""
+            },
+            {
+                "id": "empty_bottle",
+                "chance": 15,
+                "hasMaxCount": false,
+                "maxCountToGive": 2,
+                "Prerequisite": ""
+            }
+        ]
+
+    }
+}

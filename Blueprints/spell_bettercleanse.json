@@ -1,0 +1,23 @@
+{
+    "id": "blueprint_amongus_spellbettercleanse",
+    "nameOverride": "Idée: Fami'Mi'la'Misol",
+    "nameTerm": "",
+    "group": "resources",
+    "icon": "card_bettercleanse.png",
+    "hideFromIdeasTab": false,
+    "hideFromCardopedia": false,
+    "isInvention": false,
+    "needsExactMatch": true,
+    "stackText": "",
+    "subprints": [
+        {
+            "requiredCards": "amongus_spell_cleanse, amongus_spell_cleanse, magic_dust, wizard",
+            "cardsToRemove": "",
+            "resultCard": "amongus_spell_bettercleanse",
+            "extraResultCards": "",
+            "time": 20,
+            "statusOverride": "Mise au point d'un sortilège...",
+            "statusTerm": ""
+        }
+    ]
+}

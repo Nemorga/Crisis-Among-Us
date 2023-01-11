@@ -1,0 +1,73 @@
+{
+    "id": "amongus_oasis",
+    "nameOverride": "Oasis",
+    "descriptionOverride": "Un monstre qui a pris la place d'un villageois",
+    "value": -1,
+    "type": "mobs",
+    "icon": "card_oasis.png",
+    "script": "AmongUsNS.Oasis",
+    "_bossphasehp": [ 300, 240, 180, 120, 60 ],
+    "_immunities": [],
+    "_HealthPoints": 300,
+    "_IsAggressive": true,
+    "_BaseAttackType": "Magic",
+    "_BaseCombatStats": {
+        "MaxHealth": 300,
+        "AttackSpeed": 4,
+        "HitChance": 5,
+        "AttackDamage": 4,
+        "Defence": 3,
+        "AttackSpeedIncrement": 0,
+        "HitChanceIncrement": 0,
+        "AttackDamageIncrement": 0,
+        "DefenceIncrement": 0,
+        "SpecialHits": [
+            {
+                "Chance": 35,
+                "HitType": "Bleeding",
+                "Target": "Target"
+            },
+            {
+                "Chance": 15,
+                "HitType": "Damage",
+                "Target": "AllEnemy"
+            }
+        ]
+    },
+    "_Drops": {
+        "type": "Chances",
+        "CardsInPack": 5,
+        "chances": [
+            {
+                "id": "goop",
+                "chance": 5,
+                "hasMaxCount": false,
+                "maxCountToGive": 1,
+                "Prerequisite": ""
+            },
+            {
+                "id": "raw_meat",
+                "chance": 5,
+                "hasMaxCount": false,
+                "maxCountToGive": 1,
+                "Prerequisite": ""
+            },
+            {
+                "id": "magic_dust",
+                "chance": 5,
+                "hasMaxCount": false,
+                "maxCountToGive": 1,
+                "Prerequisite": ""
+            },
+            {
+                "id": "amongus_spell_reveal_all",
+                "chance": 1000,
+                "hasMaxCount": true,
+                "maxCountToGive": 1,
+                "Prerequisite": ""
+            }
+        ]
+
+    }
+
+}

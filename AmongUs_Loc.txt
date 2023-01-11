@@ -1,0 +1,25 @@
+Term	English	French
+statuseffect_amongus_SE_Still_lore	Test lore english	Pas bouger!
+statuseffect_amongus_SE_Still_name	test name english	Immobilisé
+statuseffect_amongus_SE_Still_description	test description english	Cette créature ne peut plus bouger
+statuseffect_amongus_SE_Giant_lore	lore endinglish	Go...Goliaht?
+statuseffect_amongus_SE_Giant_name	name english	Gigantisme
+statuseffect_amongus_SE_Giant_description	description	Cette créature prend plus de place et a des chances de frapper tous les ennemis!
+statuseffect_amongus_SE_FireFighter_name	firefighter english	Incendie combattu
+statuseffect_amongus_SE_FireFighter_lore	firefighter english	Chaud devant!	
+statuseffect_amongus_SE_FireFighter_description	firefighter english	Le villageois fait tout ce qu'il peut pour arrêter l'incendie au péril de sa vie.
+statuseffect_amongus_SE_Fire_name	fire english	Incendie
+statuseffect_amongus_SE_Fire_lore	fire english	Néron serait fier!
+statuseffect_amongus_SE_Fire_description	fire english	Ce batiment est en feu et sera détruit si rien n'est fait
+statuseffect_amongus_SE_contaminate_name	contaminate english	Contaminé
+statuseffect_amongus_SE_contaminate_lore	contaminate english	Beurk!
+statuseffect_amongus_SE_contaminate_description	contaminate english	Cet animal est contaminé et va donner vie à des ennemis de façon périodique, peut-être faudrait-il l'abbatre?
+statuseffect_amongus_SE_Revealed_name	english	Monstre
+statuseffect_amongus_SE_Revealed_lore	english	"How Long Were You Alone With That Dog?"
+statuseffect_amongus_SE_Revealed_description	english	Ce villageois n'en est pas un et est un monstre.<b>Double cliquez pour le forcer à se révéler</b>!
+statuseffect_amongus_SE_Normal_name	english	Villageois
+statuseffect_amongus_SE_Normal_lore	english	Grrrrrrr! Quoi? C'est pas drôle?
+statuseffect_amongus_SE_Normal_description	ensglish	Ce villageois est bien un villageois.
+statuseffect_amongus_SE_Boss_name	english	Boss
+statuseffect_amongus_SE_Boss_lore	english	Grrrrrrr! Ca a l'air costaud, non?
+statuseffect_amongus_SE_Boss_description	ensglish	Ce monstre est un boss et va passer par plusieur phases qui vont changer son comportement et déclencher des évènement, faites attention.

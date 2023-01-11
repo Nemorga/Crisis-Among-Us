@@ -1,0 +1,10 @@
+{
+    "id": "amongus_rumor_thething",
+    "nameOverride": "Rumeur : la chose",
+    "descriptionOverride": "Une créature étrange a commencé à infécter vos villegois et à les transformer en monstres. Il ya sûrement quelque chose à faire... Peu-être qu'en en tuant plus vous en apprendrez plus sur cette créature",
+    "value": 1,
+    "type": "Rumors",
+    "icon": "card_thing1.png",
+    "script": ""
+    
+}

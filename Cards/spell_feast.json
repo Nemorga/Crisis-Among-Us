@@ -1,0 +1,12 @@
+{
+    "id": "amongus_spell_Feast",
+    "nameOverride": "<i><b>Dosisolmi</b></i> ",
+    "descriptionOverride": "Utilisé pour créer un festin qui donne à tous vos villageois l'effet \"repu\".\n<b>Double-cliquez pour activer.</b> ",
+    "value": -1,
+    "type": "resources",
+    "icon": "card_spell_feast.png",
+    "script": "AmongUsNS.SpellFeast",
+    "_Charges": 1,
+    "_ChargesMax": 2
+}
+ 

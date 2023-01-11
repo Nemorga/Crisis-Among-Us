@@ -1,0 +1,74 @@
+{
+    "id": "amongus_spell_basic",
+    "nameOverride": "<i><b>Dosisol'Re</b></i>",
+    "descriptionOverride": "Le sort de base qu'apprend tout magicien: n'est pas très utile mais peut (dé)ranger votre chambre.\n<i>Doit bien servir à quelque-chose...</i>",
+    "value": -1,
+    "type": "resources",
+    "icon": "card_basic_spell.png",
+    "script": "AmongUsNS.SpellBasic",
+    "_Charges": -1,
+    "_ChargesMax": 3,
+    "_SpellToCreate": {
+        "type": "Chances",
+        "CardsInPack": 1,
+        "chances": [
+            {
+                "id": "amongus_spell_basic",
+                "chance": 100,
+                "hasMaxCount": false,
+                "maxCountToGive": 1,
+                "Prerequisite": ""
+            },
+            {
+                "id": "amongus_spell_Heal",
+                "chance": 25,
+                "hasMaxCount": false,
+                "maxCountToGive": 2,
+                "Prerequisite": ""
+            },
+            {
+                "id": "amongus_spell_kill",
+                "chance": 25,
+                "hasMaxCount": false,
+                "maxCountToGive": 2,
+                "Prerequisite": ""
+            },
+            {
+                "id": "amongus_spell_still",
+                "chance": 50,
+                "hasMaxCount": false,
+                "maxCountToGive": 2,
+                "Prerequisite": ""
+            },
+            {
+                "id": "amongus_spell_Skeleton",
+                "chance": 20,
+                "hasMaxCount": false,
+                "maxCountToGive": 2,
+                "Prerequisite": ""
+            },
+            {
+                "id": "amongus_spell_create_food",
+                "chance": 5,
+                "hasMaxCount": false,
+                "maxCountToGive": 2,
+                "Prerequisite": ""
+            },
+            {
+                "id": "amongus_spell_cleanse",
+                "chance": 5,
+                "hasMaxCount": false,
+                "maxCountToGive": 2,
+                "Prerequisite": ""
+            },
+            {
+                "id": "magic_dust",
+                "chance": 75,
+                "hasMaxCount": false,
+                "maxCountToGive": 2,
+                "Prerequisite": ""
+            }
+        ]
+
+    }
+}

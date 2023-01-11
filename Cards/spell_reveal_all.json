@@ -1,0 +1,13 @@
+{
+    "id": "amongus_spell_reveal_all",
+    "nameOverride": "<i><b>Milamisi</b></i> ",
+    "descriptionOverride": "Pendant une lune, révèle si tous les villageois sont des monstres déguisés.\n<b>Double-cliquez pour activer.</b>",
+    "value": -1,
+    "type": "resources",
+    "icon": "card_reveal_all.png",
+    "script": "AmongUsNS.SpellReveal",
+    "_Charges": 2,
+    "_ChargesMax": 2,
+    "_all": true
+}
+ 

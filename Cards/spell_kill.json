@@ -1,0 +1,12 @@
+{
+    "id": "amongus_spell_kill",
+    "nameOverride": "<i><b>Sisol'Sifa</b></i> ",
+    "descriptionOverride": "Malédiction de mort, inflige des dégât ou tue une créature.",
+    "value": -1,
+    "type": "resources",
+    "icon": "card_spell_kill.png",
+    "script": "AmongUsNS.SpellKill",
+    "_Charges": 1,
+    "_ChargesMax": 2
+}
+ 

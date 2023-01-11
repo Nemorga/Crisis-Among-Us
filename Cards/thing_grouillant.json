@@ -1,0 +1,45 @@
+{
+    "id": "amongus_grouillant",
+    "nameOverride": "Grouillant",
+    "descriptionOverride": "Un petit amalgame de chaires et de morceaux d'animaux assemblé lamentablement.",
+    "value": -1,
+    "type": "mobs",
+    "icon": "card_grouillant.png",
+    "script": "AmongUsNS.ThingLitle",
+    "_HealthPoints": 5,
+    "_IsAggressive": true,
+    "_BaseAttackType": "Ranged",
+    "_BaseCombatStats": {
+        "MaxHealth": 5,
+        "AttackSpeed": 2,
+        "HitChance": 1,
+        "AttackDamage": 1,
+        "Defence": 0,
+        "AttackSpeedIncrement": 0,
+        "HitChanceIncrement": 0,
+        "AttackDamageIncrement": 0,
+        "DefenceIncrement": 0,
+        "SpecialHits": [
+            {
+                "Chance": 10,
+                "HitType": "LifeSteal",
+                "Target": "Target"
+            }
+        ]
+    },
+    "_Drops": {
+        "type": "Chances",
+        "CardsInPack": 1,
+        "chances": [
+            {
+                "id": "goop",
+                "chance": 5,
+                "hasMaxCount": false,
+                "maxCountToGive": 1,
+                "Prerequisite": ""
+            }
+        ]
+
+    }
+
+}

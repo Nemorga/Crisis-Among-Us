@@ -1,0 +1,23 @@
+{
+    "id": "blueprint_amongus_spellfood",
+    "nameOverride": "Idée: Dolafa'Re",
+    "nameTerm": "",
+    "group": "resources",
+    "icon": "card_spell_food.png",
+    "stackText": "",
+    "hideFromIdeasTab": false,
+    "hideFromCardopedia": false,
+    "isInvention": false,
+    "needsExactMatch": true,
+    "subprints": [
+        {
+            "requiredCards": "amongus_spell_basic, plank,magic_dust, mage",
+            "cardsToRemove": "",
+            "resultCard": "amongus_spell_create_food",
+            "extraResultCards": "",
+            "time": 15,
+            "statusOverride": "Mise au point d'un sortilège...",
+            "statusTerm": ""
+        }
+    ]
+}

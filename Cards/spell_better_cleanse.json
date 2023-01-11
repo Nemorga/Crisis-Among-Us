@@ -1,0 +1,13 @@
+{
+    "id": "amongus_spell_bettercleanse",
+    "nameOverride": "<i><b>Fami'Mi'la'Misol</b></i> ",
+    "descriptionOverride": "Suprimme tous les états anormaux négatifs affligeants la cible mais préserve ceux qui sont positifs.",
+    "value": -1,
+    "type": "resources",
+    "icon": "card_bettercleanse.png",
+    "script": "AmongUsNS.SpellCleanse",
+    "_Charges": 1,
+    "_ChargesMax": 1,
+    "_better": true
+}
+ 

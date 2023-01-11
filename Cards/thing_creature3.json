@@ -1,0 +1,66 @@
+{
+    "id": "amongus_the_thing3",
+    "nameOverride": "Horreur",
+    "descriptionOverride": "Un monstre qui a pris la place d'un villageois",
+    "value": -1,
+    "type": "mobs",
+    "icon": "card_thing3.png",
+    "script": "AmongUsNS.ThingCreature",
+    "_HealthPoints": 18,
+    "_IsAggressive": true,
+    "_BaseAttackType": "Melee",
+    "_BaseCombatStats": {
+        "MaxHealth": 18,
+        "AttackSpeed": 2,
+        "HitChance": 3,
+        "AttackDamage": 2,
+        "Defence": 2,
+        "AttackSpeedIncrement": 0,
+        "HitChanceIncrement": 0,
+        "AttackDamageIncrement": 0,
+        "DefenceIncrement": 0,
+        "SpecialHits": [
+            {
+                "Chance": 5,
+                "HitType": "Bleeding",
+                "Target": "Target"
+            }
+        ]
+    },
+    "_Drops": {
+        "type": "Chances",
+        "CardsInPack": 1,
+        "chances": [
+            {
+                "id": "goop",
+                "chance": 70,
+                "hasMaxCount": false,
+                "maxCountToGive": 1,
+                "Prerequisite": ""
+            },
+            {
+                "id": "raw_meat",
+                "chance": 30,
+                "hasMaxCount": false,
+                "maxCountToGive": 1,
+                "Prerequisite": ""
+            },
+            {
+                "id": "blueprint_amongus_spellreveal",
+                "chance": 5,
+                "hasMaxCount": true,
+                "maxCountToGive": 1,
+                "Prerequisite": ""
+            },
+            {
+                "id": "amongus_rumor_thething",
+                "chance": 1000,
+                "hasMaxCount": true,
+                "maxCountToGive": 1,
+                "Prerequisite": ""
+            }
+        ]
+
+    }
+
+}

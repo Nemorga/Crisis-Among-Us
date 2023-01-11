@@ -1,0 +1,12 @@
+{
+    "id": "amongus_spell_Heal",
+    "nameOverride": "<i><b>Fa'Rerela</b></i> ",
+    "descriptionOverride": "Permet de complètement soigner un villageois... et c'est déjà bien.",
+    "value": -1,
+    "type": "resources",
+    "icon": "card_healing_spell.png",
+    "script": "AmongUsNS.SpellHeal",
+    "_Charges": 1,
+    "_ChargesMax": 3
+}
+ 

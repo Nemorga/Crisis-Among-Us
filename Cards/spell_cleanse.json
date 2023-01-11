@@ -1,0 +1,12 @@
+{
+    "id": "amongus_spell_cleanse",
+    "nameOverride": "<i><b>Fami'Mi'la</b></i> ",
+    "descriptionOverride": "Suprimme tous les états anormaux affligeants la cible (négatifs ET positifs)",
+    "value": -1,
+    "type": "resources",
+    "icon": "card_cleanse.png",
+    "script": "AmongUsNS.SpellCleanse",
+    "_Charges": -1,
+    "_ChargesMax": 3
+}
+ 

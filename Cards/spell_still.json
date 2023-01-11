@@ -1,0 +1,12 @@
+{
+    "id": "amongus_spell_still",
+    "nameOverride": "<i><b>Fado'Dofa</b></i> ",
+    "descriptionOverride": "Rend un ennemi ou un animal immobile, incapable de bouger pendant un certain temps.",
+    "value": -1,
+    "type": "resources",
+    "icon": "card_spell_still.png",
+    "script": "AmongUsNS.SpellStill",
+    "_Charges": -1,
+    "_ChargesMax": 5
+}
+ 

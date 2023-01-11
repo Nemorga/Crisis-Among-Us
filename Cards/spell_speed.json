@@ -1,0 +1,12 @@
+{
+    "id": "amongus_spell_speed",
+    "nameOverride": "<i><b>Fasi'Mire</b></i> ",
+    "descriptionOverride": "Augmente drastiquement la vitesse de récolte ou de construction, au point de la rendre instantanée",
+    "value": -1,
+    "type": "resources",
+    "icon": "card_spell_speed.png",
+    "script": "AmongUsNS.SpellSpeed",
+    "_Charges": 1,
+    "_ChargesMax": 1
+}
+ 

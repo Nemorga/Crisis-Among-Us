@@ -1,0 +1,15 @@
+{
+    "id": "amongus_created_skeleton",
+    "nameOverride": "Squelette animé",
+    "descriptionOverride": "Un mort-vivant esclave créé par nécromancie",
+    "value": -1,
+    "type": "Humans",
+    "icon": "card_createdskeleton.png",
+    "script": "AmongUsNS.CreatedSkeleton",
+    "_CanBreed": false,
+    "_HealthPoints": 12,
+    "_InheritCombatStatsFromOtherCard": true,
+    "_InheritCombatStatsFrom": "skeleton",
+    "_CanOverrideCardFromEquipment": false
+
+}

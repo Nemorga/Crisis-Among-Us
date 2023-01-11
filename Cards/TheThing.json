@@ -1,0 +1,15 @@
+{
+    "id": "amongus_the_thing",
+    "nameTerm": "card_villager_name",
+    "descriptionTerm": "card_villager_description",
+    "value": -1,
+    "type": "Humans",
+    "icon": "card_createdskeleton.png",
+    "script": "AmongUsNS.TheThing",
+    "_CanBreed": false,
+    "_HealthPoints": 15,
+    "_InheritCombatStatsFromOtherCard": true,
+    "_InheritCombatStatsFrom": "villager",
+    "_CanOverrideCardFromEquipment": false
+
+}
