@@ -22,7 +22,7 @@ You'll have the choice when to make this boss appears so you can prepare before 
 
 1) Download and Install [BepInEx for Stacklands](https://stacklands.thunderstore.io/package/BepInEx/BepInExPack_Stacklands)
 2) Download and Install [BerryLoader](https://stacklands.thunderstore.io/package/BerryLoader/BerryLoader/).
-3) Download this mod and exract its content into `BepInEx/plugins/AmongUs` (create the AmongUs folder if needed)
+3) Download this mod and exract the content of the `plugins` folder into `BepInEx/plugins/AmongUs` (create the AmongUs folder if needed)
 4) Launch the game and Enjoy(die and suffer).
 
 ____

@@ -29,7 +29,7 @@ namespace AmongUsNS
         public static BepInEx.Logging.ManualLogSource L;
         public static Harmony harmonyinstance;
         public static Dictionary<string, AudioClip> MyAudioClips = new Dictionary<string, AudioClip>();
-        public static string Mypath = Path.Combine(BepInEx.Paths.PluginPath, "AmongUs");
+        public static string Mypath;
         public static Dictionary<string, Sprite> MySprites = new Dictionary<string, Sprite>();
         
         //AmongUs Run Variable
@@ -41,7 +41,7 @@ namespace AmongUsNS
 
         private void Awake()
         {
-
+            Mypath = Directory.GetParent(this.Info.Location).ToString();
             L = Logger;
             L.LogInfo("They're among us");
             harmonyinstance = new Harmony("AmongUs");
