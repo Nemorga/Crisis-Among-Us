@@ -1,7 +1,9 @@
 {
     "id": "amongus_spell_Skeleton",
-    "nameOverride": "<i><b>Do'Resido</b></i> ",
-    "descriptionOverride": "Transforme un cadavre en squelette animé qui obéis aux ordres et retourne à l'état de cadrave à la fin de la lune en court",
+    "nameOverride": "",
+    "descriptionOverride": "",
+    "nameTerm": "card_amongus_spell_Skeleton_name",
+    "descriptionTerm": "card_amongus_spell_Skeleton_description",
     "value": -1,
     "type": "resources",
     "icon": "card_createdskeleton.png",

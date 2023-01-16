@@ -24,21 +24,6 @@ namespace AmongUsNS
 
 
 
-        protected override void Awake()
-        {
-
-            base.Awake();
-
-                
-
-
-        }
-
-        public override void Clicked()
-        {
-
-            base.Clicked();
-        }
         public override void Die()
         {
 
@@ -54,15 +39,15 @@ namespace AmongUsNS
             yield return new WaitForSeconds(1f);
             if(InConflict) 
             { 
-                Cutscenes.Title = "Victoire?";
-                Cutscenes.Text = "Oasis semble défaite mais, dans un râle d'agonie, des chancres charnus purulant explosent et aspergent vos villageois d'une substance délétère";
-                yield return Cutscenes.WaitForContinueClicked("oh non!");
+                Cutscenes.Title = SokLoc.Translate("label_amongus_cs_thingboss_victory")+" ?";
+                Cutscenes.Text = SokLoc.Translate("label_amongus_cs_thingboss_deaththroes");
+                yield return Cutscenes.WaitForContinueClicked(SokLoc.Translate("label_uh_oh"));
                 DeathThroes(Math.Max(MyConflict.GetTeamSize(Team.Player) / 2,1), 10, true, new string[]{"StatusEffect_Bleeding"}, null);
                 yield return new WaitForSeconds(1f);
             }
-            Cutscenes.Title = "Victoire!";
-            Cutscenes.Text = "Puis tout son corps se met à trembler et à s'agiter de remous...";
-            yield return Cutscenes.WaitForContinueClicked("hum?");
+            Cutscenes.Title = SokLoc.Translate("label_amongus_cs_thingboss_victory")+ " !";
+            Cutscenes.Text = SokLoc.Translate("label_amongus_cs_thingboss_tremble");
+            yield return Cutscenes.WaitForContinueClicked(SokLoc.Translate("label_amongus_cs_hum"));
             GameCamera.instance.TargetPositionOverride = MyGameCard.transform.position;
             MyGameCard.RotWobble(2f);
             for (int count = 0; count <=100;count++)
@@ -82,8 +67,8 @@ namespace AmongUsNS
             }
             TryDropItems();
             MyGameCard.DestroyCard();
-            Cutscenes.Text = "Et dans un élan finale, l'horreure Oasis explose.";
-            yield return Cutscenes.WaitForContinueClicked("Bon débaras!");
+            Cutscenes.Text = SokLoc.Translate("label_amongus_cs_thingboss_death");
+            yield return Cutscenes.WaitForContinueClicked(SokLoc.Translate("label_amongus_cs_good"));
             Cutscenes.Title = "";
             Cutscenes.Text = "";
             GameCamera.instance.TargetPositionOverride = null;
@@ -108,10 +93,10 @@ namespace AmongUsNS
             GameCanvas.instance.SetScreen(GameCanvas.instance.CutsceneScreen);
             WorldManager.instance.CurrentGameState = WorldManager.GameState.Paused;
             AudioManager.me.PlaySound2D(AmongUs.MyAudioClips["SL_reveal_all"], 0.7f, 0.2f);
-            Cutscenes.Title = "Perte d'alliés";
-            Cutscenes.Text = "Oasis fait un seul geste et, parmi les combattant,tous les villageois remplacés par des monstres se transforment.";
-            yield return Cutscenes.WaitForContinueClicked("Oh non!");
-            Cutscenes.Text = "Les villageois se transforment...";
+            Cutscenes.Title = SokLoc.Translate("label_amongus_cs_allylost");
+            Cutscenes.Text = SokLoc.Translate("label_amongus_cs_fightertransform");
+            yield return Cutscenes.WaitForContinueClicked(SokLoc.Translate("label_uh_oh"));
+            Cutscenes.Text = SokLoc.Translate("label_amongus_cs_villagerstranform");
             List<Combatable> things = MyConflict.Participants.Where(x=> x is TheThing).ToList();   
             foreach (TheThing thing in things)
             {
@@ -188,20 +173,6 @@ namespace AmongUsNS
                 AddStatusEffect(new StatusEffect_Frenzy());
 
         }
-
-
-        public override void UpdateCard()
-        {
-            
-            base.UpdateCard();
-            string desc = Description.Replace("---MISSING---", "L'ignominie, la créature responsable des choses qui remplacent les villageois");
-            descriptionOverride = desc;
-            
-            
-                   
-        } 
-        
-
 
     }
     

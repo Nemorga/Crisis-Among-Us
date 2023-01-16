@@ -14,19 +14,8 @@ namespace AmongUsNS
     {
         public bool better = false;
 
-        public override SpellTargets Targets => base.Targets = new SpellTargets();
-        protected override void Awake()
-        {
-            base.Awake();
-
-        }
-
-
-        public override void Clicked()
-        {
-            base.Clicked();
-
-        }
+        public override SpellTargets Targets =>  new SpellTargets();
+      
         protected override bool CanHaveCard(CardData otherCard)
         {
             if (otherCard.Id == "magic_dust")

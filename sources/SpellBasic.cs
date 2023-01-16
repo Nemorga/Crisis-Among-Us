@@ -15,7 +15,7 @@ namespace AmongUsNS
         public float bounce=0f;
         public bool DoWobble = false;
         public CardBag SpellToCreate;
-        public override SpellTargets Targets => base.Targets = new SpellTargets();
+        public override SpellTargets Targets => new SpellTargets();
 
         protected override bool CanHaveCard(CardData otherCard)
         {
@@ -24,11 +24,7 @@ namespace AmongUsNS
                 return true;
             return base.CanHaveCard(otherCard);
         }
-        protected override void Awake()
-        {
-            base.Awake();
-
-        }
+       
         public override void StoppedDragging()
         {
             

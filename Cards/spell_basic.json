@@ -1,7 +1,9 @@
 {
     "id": "amongus_spell_basic",
-    "nameOverride": "<i><b>Dosisol'Re</b></i>",
-    "descriptionOverride": "Le sort de base qu'apprend tout magicien: n'est pas très utile mais peut (dé)ranger votre chambre.\n<i>Doit bien servir à quelque-chose...</i>",
+    "nameOverride": "",
+    "descriptionOverride": "",
+    "nameTerm": "card_amongus_spell_basic_name",
+    "descriptionTerm": "card_amongus_spell_basic_description",
     "value": -1,
     "type": "resources",
     "icon": "card_basic_spell.png",

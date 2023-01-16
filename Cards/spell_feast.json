@@ -1,7 +1,9 @@
 {
     "id": "amongus_spell_Feast",
-    "nameOverride": "<i><b>Dosisolmi</b></i> ",
-    "descriptionOverride": "Utilisé pour créer un festin qui donne à tous vos villageois l'effet \"repu\".\n<b>Double-cliquez pour activer.</b> ",
+    "nameOverride": "",
+    "descriptionOverride": "",
+    "nameTerm": "card_amongus_spell_Feast_name",
+    "descriptionTerm": "card_amongus_spell_Feast_description",
     "value": -1,
     "type": "resources",
     "icon": "card_spell_feast.png",

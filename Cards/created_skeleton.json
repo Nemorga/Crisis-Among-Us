@@ -1,7 +1,9 @@
 {
     "id": "amongus_created_skeleton",
-    "nameOverride": "Squelette animé",
-    "descriptionOverride": "Un mort-vivant esclave créé par nécromancie",
+    "nameOverride": "",
+    "descriptionOverride": "",
+    "nameTerm": "card_amongus_created_skeleton_name",
+    "descriptionTerm": "card_amongus_created_skeleton_description",
     "value": -1,
     "type": "Humans",
     "icon": "card_createdskeleton.png",

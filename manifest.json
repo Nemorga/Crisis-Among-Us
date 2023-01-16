@@ -1,0 +1,10 @@
+{
+    "name": "Crisis_Among_Us",
+    "version_number": "1.0.0",
+    "website_url": "https://github.com/Nemorga/Crisis-Among-Us",
+    "description": "Adds a crisis to the game, starting on 60e moon, that is heavily inspired by Carpenter's The Thing. Game-over may ensue...",
+    "dependencies": [
+        "BepInEx-BepInExPack_Stacklands-5.4.2100",
+        "BerryLoader-BerryLoader-0.8.0"
+    ]
+}

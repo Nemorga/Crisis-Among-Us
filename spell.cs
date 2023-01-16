@@ -48,10 +48,9 @@ namespace AmongUsNS
             if (clicked >= 0.5f)
                 clicked = 0;
             
-            string desc = $"\nA actuellement {Charges}/{ChargesMax} charges";
-            var index = Description.IndexOf("\n");
-            string desc2 = index>0? Description.Remove(index): Description;
-            descriptionOverride = desc2+desc;
+            string desc = SokLoc.Translate("label_amongus_spell_charge", LocParam.Create("charge", Charges.ToString()), LocParam.Create("chargemax", ChargesMax.ToString()));
+            descriptionOverride = SokLoc.Translate(DescriptionTerm);
+            descriptionOverride = descriptionOverride+"\n"+desc;
             
             base.UpdateCard();
             
@@ -106,7 +105,8 @@ namespace AmongUsNS
         {
             if (WorldManager.instance.RemovingCards)
                 AbortSpell();
-            WorldManager.instance.QueueCutscene(SpellAnim(card, card.HasParent? card.Parent.transform.position: card.transform.position));
+            else
+                WorldManager.instance.QueueCutscene(SpellAnim(card, card.HasParent? card.Parent.transform.position: card.transform.position));
         }
         protected override bool CanHaveCard(CardData otherCard)
         {

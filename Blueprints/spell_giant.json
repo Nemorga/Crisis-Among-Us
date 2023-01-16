@@ -1,7 +1,7 @@
 {
     "id": "blueprint_amongus_spellgiant",
-    "nameOverride": "Idée: Domifala",
-    "nameTerm": "",
+    "nameOverride": "",
+    "nameTerm": "card_amongus_spell_Giant_name",
     "group": "resources",
     "icon": "card_spell_giant.png",
     "stackText": "",
@@ -16,8 +16,8 @@
             "resultCard": "amongus_spell_Giant",
             "extraResultCards": "",
             "time": 20,
-            "statusOverride": "Mise au point d'un sortilège...",
-            "statusTerm": ""
+            "statusOverride": "",
+            "statusTerm": "idea_amongus_spell_status"
         }
     ]
 }

@@ -69,8 +69,8 @@ namespace AmongUsNS
         {
             GameCanvas.instance.SetScreen(GameCanvas.instance.CutsceneScreen);
             GameCamera.instance.TargetPositionOverride = MyGameCard.transform.position;
-            Cutscenes.Title = "Le voyageur";
-            Cutscenes.Text = "Semble-t-il content de votre accueil, le voyageur vous récompense!";
+            Cutscenes.Title = SokLoc.Translate("label_amongus_cs_traveler");
+            Cutscenes.Text = SokLoc.Translate("label_amongus_cs_traveler_reward");
             yield return Cutscenes.WaitForContinueClicked("Ah!");
             CardBag reward = new CardBag();
             if (type == "magic")
@@ -97,9 +97,9 @@ namespace AmongUsNS
         {
             GameCanvas.instance.SetScreen(GameCanvas.instance.CutsceneScreen);
             GameCamera.instance.TargetPositionOverride = MyGameCard.transform.position;
-            Cutscenes.Title = "Le voyageur";
-            Cutscenes.Text = "Et sans dire un mot, le voyageur s'en va comme il est venu, vers l'inconnu.";
-            yield return Cutscenes.WaitForContinueClicked("Bon...");
+            Cutscenes.Title = SokLoc.Translate("label_amongus_cs_traveler");
+            Cutscenes.Text = SokLoc.Translate("label_amongus_cs_traveler_leave");
+            yield return Cutscenes.WaitForContinueClicked(SokLoc.Translate("label_amongus_cs_farwell"));
             yield return new WaitForSeconds(0.25f);
             MyGameCard.DestroyCard(true, true);
             yield return new WaitForSeconds(0.25f);
@@ -120,22 +120,29 @@ namespace AmongUsNS
             yield return new WaitForSeconds(0.25f);
             Traveler traveler = (Traveler)WorldManager.instance.CreateCard(WorldManager.instance.MiddleOfBoard(), "amongus_strange_traveler", true, false, true);
             float num = UnityEngine.Random.value;
-            float timemod = 50f / (float)WorldManager.instance.CurrentMonth;
-            if (WorldManager.instance.GetCards<TheThing>().Count == 0 && !AmongUs.AU_OasisKilled && WorldManager.instance.GetCards<Villager>().Count >3 && num*timemod<0.5)
-                traveler.type = "bad";
-            else 
+            float timemod = Mathf.Clamp(80f / (float)WorldManager.instance.CurrentMonth, 0.75f,1.25f);
+            int villagers = WorldManager.instance.GetCards<Villager>().Count();
+            float villagermod = Mathf.Clamp(20f / (float)villagers,0.75f, 5f);
+            if (WorldManager.instance.CurrentMonth >= 70 && !AmongUs.AU_First_Infect)
+                num = 0f;
+            if (WorldManager.instance.GetCards<TheThing>().Count == 0 && !AmongUs.AU_OasisKilled && WorldManager.instance.GetCards<Villager>().Count > 3 && num * timemod * villagermod < 0.5f)
             {
-                float friendmod = 1f + ((float)AmongUs.AU_FriendlyTraveler/10f);
-                num= num * Mathf.Clamp(friendmod,1f,2f);
+                traveler.type = "bad";
+                AmongUs.AU_First_Infect = true;
+            }
+            else
+            {
+                float friendmod = 1f + ((float)AmongUs.AU_FriendlyTraveler / 10f);
+                num = num * Mathf.Clamp(friendmod, 1f, 3f);
                 if (num >= 0.6f)
                     traveler.type = "resource";
-                if (num>=0.85f)
+                if (num >= 0.85f)
                     traveler.type = "magic";
 
             }
-            Cutscenes.Title = "Un voyageur";
-            Cutscenes.Text = "Un étrange voyageur viens d'arriver, que faire?";
-            yield return Cutscenes.WaitForAnswer("Il est le bienvenue ici!", "Qu'il s'en aille!");
+            Cutscenes.Title = SokLoc.Translate("label_amongus_cs_traveler");
+            Cutscenes.Text = SokLoc.Translate("label_amongus_cs_traveler_arrival");
+            yield return Cutscenes.WaitForAnswer(SokLoc.Translate("label_amongus_cs_traveler_answer_yes"), SokLoc.Translate("label_amongus_cs_traveler_answer_no"));
             Cutscenes.Text = "";
             if (WorldManager.instance.ContinueButtonIndex == 1)
             {
@@ -148,10 +155,10 @@ namespace AmongUsNS
                 {
                     traveler.MyGameCard.RotWobble(2f);
                     yield return new WaitForSeconds(1f);
-                    Cutscenes.Text = "Il refuse de partir! ";
+                    Cutscenes.Text = SokLoc.Translate("label_amongus_cs_traveler_refuse");
                     if (traveler.type != "bad")
                         traveler.type = "none";
-                    yield return Cutscenes.WaitForContinueClicked("Quoi?!");
+                    yield return Cutscenes.WaitForContinueClicked(SokLoc.Translate("label_amongus_cs_what"));
                     traveler.MyGameCard.SendIt();
 
                 }
@@ -162,8 +169,8 @@ namespace AmongUsNS
             {
                 traveler.MyGameCard.RotWobble(2f);
                 yield return new WaitForSeconds(1f);
-                Cutscenes.Text = "Le voyageur  exprime sa gratitude et prend ses aises dans votre communauté.";
-                yield return Cutscenes.WaitForContinueClicked("Très bien.");
+                Cutscenes.Text = SokLoc.Translate("label_amongus_cs_traveler_grateful");
+                yield return Cutscenes.WaitForContinueClicked(SokLoc.Translate("label_amongus_cs_allright"));
                 traveler.MyGameCard.SendIt();
                 AmongUs.AU_FriendlyTraveler++;
 

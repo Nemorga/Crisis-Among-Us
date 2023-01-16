@@ -9,31 +9,23 @@ namespace AmongUsNS
     internal class CreatedSkeleton : Villager
     {
         
-       
-      
-        protected override void Awake()
-        {
-        
-            base.Awake();
-            
-        }
         public override int GetRequiredFoodCount()
         {
             return 0;
         }
        
-        public override void Clicked()
-        {
-            base.Clicked();
-            
-        }
         public override void UpdateCard()
         {
             if (HasStatusEffectOfType<StatusEffect_Drunk>())
                 RemoveStatusEffect<StatusEffect_Drunk>();
+            if (HasStatusEffectOfType<StatusEffect_Bleeding>())
+                RemoveStatusEffect<StatusEffect_Bleeding>();
+            if (HasStatusEffectOfType<StatusEffect_Poison>())
+                RemoveStatusEffect<StatusEffect_Poison>();
+            if (HasStatusEffectOfType<StatusEffect_WellFed>())
+                RemoveStatusEffect<StatusEffect_WellFed>();
             base.UpdateCard();
-            string desc = Description.Replace("---MISSING---", "Un mort-vivant esclave créé par nécromancie");
-            descriptionOverride = desc;
+           
 
         }
 

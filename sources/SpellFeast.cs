@@ -15,19 +15,8 @@ namespace AmongUsNS
     {
         
 
-        public override SpellTargets Targets => base.Targets = new SpellTargets();
-        protected override void Awake()
-        {
-            base.Awake();
-          
-        }
-
-
-        public override void Clicked()
-        {
-            base.Clicked();
-          
-        }
+        public override SpellTargets Targets =>  new SpellTargets();
+      
         public override void DoubleClicked()
         {
             InitSpellEffect(MyGameCard);

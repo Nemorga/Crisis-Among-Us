@@ -1,7 +1,9 @@
 {
     "id": "amongus_oasis",
-    "nameOverride": "Oasis",
-    "descriptionOverride": "Un monstre qui a pris la place d'un villageois",
+    "nameOverride": "",
+    "descriptionOverride": "",
+    "nameTerm": "card_amongus_boss_name",
+    "descriptionTerm": "card_amongus_boss_description",
     "value": -1,
     "type": "mobs",
     "icon": "card_oasis.png",

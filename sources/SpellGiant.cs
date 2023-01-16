@@ -17,21 +17,9 @@ namespace AmongUsNS
     {
         
 
-        public override SpellTargets Targets => base.Targets = new SpellTargets { ByType = typeof(Villager) };
-        protected override void Awake()
-        {
-           
-            base.Awake();
-          
-        }
+        public override SpellTargets Targets =>  new SpellTargets { ByType = typeof(Villager) };
+     
 
-
-        public override void Clicked()
-        {
-            base.Clicked();
-          
-        }
- 
        
         public override void InitSpellEffect(GameCard card)
         {

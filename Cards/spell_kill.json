@@ -1,7 +1,9 @@
 {
     "id": "amongus_spell_kill",
-    "nameOverride": "<i><b>Sisol'Sifa</b></i> ",
-    "descriptionOverride": "Malédiction de mort, inflige des dégât ou tue une créature.",
+    "nameOverride": "",
+    "descriptionOverride": "",
+    "nameTerm": "card_amongus_spell_kill_name",
+    "descriptionTerm": "card_amongus_spell_kill_description",
     "value": -1,
     "type": "resources",
     "icon": "card_spell_kill.png",

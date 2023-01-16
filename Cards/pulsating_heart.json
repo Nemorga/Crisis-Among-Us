@@ -1,7 +1,9 @@
 {
     "id": "amongus_pulsating_heart",
-    "nameOverride": "Coeur chancreux palpitant",
-    "descriptionOverride": "Un des coeurs d'une de ces créatures, encore intacte et palpitant. Peut-être que si un de vos mage ou sorcier l'examinait vous pouriez trouver la source de l'invasion?",
+    "nameOverride": "",
+    "descriptionOverride": "",
+    "nameTerm": "card_amongus_pulsating_heart_name",
+    "descriptionTerm": "card_amongus_pulsating_heart_description",
     "value": 1,
     "type": "resources",
     "icon": "card_pulsating_heart.png",

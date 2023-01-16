@@ -1,7 +1,7 @@
 {
     "id": "blueprint_amongus_spellfeast",
-    "nameOverride": "Idée: Dosisolmi",
-    "nameTerm": "",
+    "nameOverride": "",
+    "nameTerm": "card_amongus_spell_Feast_name",
     "group": "resources",
     "icon": "card_spell_feast.png",
     "stackText": "",
@@ -16,8 +16,8 @@
             "resultCard": "amongus_spell_Feast",
             "extraResultCards": "",
             "time": 20,
-            "statusOverride": "Mise au point d'un sortilège...",
-            "statusTerm": ""
+            "statusOverride": "",
+            "statusTerm": "idea_amongus_spell_status"
         }
     ]
 }

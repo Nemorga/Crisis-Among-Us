@@ -16,23 +16,24 @@ namespace AmongUsNS
         static void AddBooster(ref string[] ___BoostersToCreate)
         {
             if (!___BoostersToCreate.Contains("island2"))
-                ___BoostersToCreate = ___BoostersToCreate.AddToArray("amongus_saunabooster");
+                ___BoostersToCreate = ___BoostersToCreate.AddToArray("amongus_magicbooster");
 
         }
         [HarmonyPatch(typeof(WorldManager), "GetSaveRound")]
         [HarmonyPostfix]
 
-        static void SaveSaunaVar(ref SaveRound __result)
+        static void SaveAUVar(ref SaveRound __result)
         {
-            AmongUs.L.LogInfo("saving SaunaVar");
+            AmongUs.L.LogInfo("saving AU variables");
             SerializedKeyValuePairHelper.SetOrAdd(__result.ExtraKeyValues, nameof(AmongUs.AU_ThingKilled), AmongUs.AU_ThingKilled.ToString());
             SerializedKeyValuePairHelper.SetOrAdd(__result.ExtraKeyValues, nameof(AmongUs.AU_FriendlyTraveler), AmongUs.AU_FriendlyTraveler.ToString());
             SerializedKeyValuePairHelper.SetOrAdd(__result.ExtraKeyValues, nameof(AmongUs.AU_OasisKilled), AmongUs.AU_OasisKilled.ToString());
+            SerializedKeyValuePairHelper.SetOrAdd(__result.ExtraKeyValues, nameof(AmongUs.AU_First_Infect), AmongUs.AU_First_Infect.ToString());
 
         }
         [HarmonyPatch(typeof(WorldManager), "LoadSaveRound")]
         [HarmonyPostfix]
-        static void LoadSaunaVar(SaveGame ___CurrentSaveGame)
+        static void LoadAUVar(SaveGame ___CurrentSaveGame)
         {
 
             if (___CurrentSaveGame.LastPlayedRound.ExtraKeyValues.Count() != 0)
@@ -42,22 +43,23 @@ namespace AmongUsNS
                 AmongUs.AU_ThingKilled = SKVP.GetWithKey(nameof(AmongUs.AU_ThingKilled)) != null ? Convert.ToInt32(SKVP.GetWithKey(nameof(AmongUs.AU_ThingKilled)).Value) : 0;
                 AmongUs.AU_FriendlyTraveler = SKVP.GetWithKey(nameof(AmongUs.AU_FriendlyTraveler)) != null ? Convert.ToInt32(SKVP.GetWithKey(nameof(AmongUs.AU_FriendlyTraveler)).Value) : 0;
                 AmongUs.AU_OasisKilled = SKVP.GetWithKey(nameof(AmongUs.AU_OasisKilled)) != null ? SKVP.GetWithKey(nameof(AmongUs.AU_OasisKilled)).Value == bool.TrueString ? true : false : false;
-
+                AmongUs.AU_OasisKilled = SKVP.GetWithKey(nameof(AmongUs.AU_First_Infect)) != null ? SKVP.GetWithKey(nameof(AmongUs.AU_First_Infect)).Value == bool.TrueString ? true : false : false;
             }
-            AmongUs.L.LogInfo("Loaded Saunavars: \nReady = " + AmongUs.AU_ThingKilled + "\nEnd= " + AmongUs.AU_OasisKilled.ToString());
+            AmongUs.L.LogInfo("Loaded AU variables: \nReady = " + AmongUs.AU_ThingKilled + "\nEnd= " + AmongUs.AU_OasisKilled.ToString());
 
 
         }
         [HarmonyPatch(typeof(WorldManager), "StartNewRound")]
         [HarmonyPostfix]
 
-        static void ResetSaunaVar()
+        static void ResetAUVar()
         {
-            AmongUs.L.LogInfo("reseting Saunavars");
+            AmongUs.L.LogInfo("reseting AU variables");
 
             AmongUs.AU_ThingKilled = 0;
             AmongUs.AU_FriendlyTraveler = 0;
             AmongUs.AU_OasisKilled = false;
+            AmongUs.AU_First_Infect = false;
 
         }
         [HarmonyPatch(typeof(CardData), "CanHaveCardOnTop")]
@@ -182,7 +184,7 @@ namespace AmongUsNS
 
         static void StrangeTraverlerPatch(WorldManager __instance)
         {
-            if (__instance.CurrentGameState == GameState.Playing && __instance.currentAnimationRoutine == null && __instance.starterPack == null && __instance.currentAnimation == null && !TransitionScreen.InTransition && __instance.CurrentBoard.Id != "forest" && __instance.CurrentMonth >= 50)
+            if (__instance.CurrentGameState == GameState.Playing && __instance.currentAnimationRoutine == null && __instance.starterPack == null && __instance.currentAnimation == null && !TransitionScreen.InTransition && __instance.CurrentBoard.Id != "forest"  && __instance.CurrentMonth >= 60)
             {
                 if (__instance.GetCard<StrangePortal>() == null && __instance.GetCard<PirateBoat>() == null && __instance.GetCard<TravellingCart>() == null && __instance.CurrentMonth % 5 == 0 && __instance.MonthTimer <= 1f && AmongUs.AU_TravelerCanAppear)
                 {

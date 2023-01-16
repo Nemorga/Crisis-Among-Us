@@ -1,10 +1,12 @@
 {
     "id": "amongus_dummy_magic_user",
-    "nameOverride": "Sorcier ou Magicien",
-    "descriptionOverride": "vous ne devriez pas lire ceci",
+    "nameOverride": "",
+    "descriptionOverride": "",
+    "nameTerm": "card_amongus_dummy_magic_user_name",
+    "descriptionTerm": "card_amongus_dummy_magic_user_description",
     "value": 1,
     "type": "Humans",
-    "icon": "card_zintrium_ore.png",
+    "icon": "card_rock.png",
     "script": "",
     "_HideFromCardopedia": true
 }

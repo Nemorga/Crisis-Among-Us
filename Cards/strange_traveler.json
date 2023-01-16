@@ -1,7 +1,9 @@
 {
     "id": "amongus_strange_traveler",
-    "nameOverride": "Voyageur étrange",
-    "descriptionOverride": "Un vagabond qui s'est invité parmis vous, que veut-il donc?",
+    "nameOverride": "",
+    "descriptionOverride": "",
+    "nameTerm": "card_amongus_strange_traveler_name",
+    "descriptionTerm": "card_amongus_strange_traveler_description",
     "value": -1,
     "type": "resources",
     "icon": "card_strange_traveler.png",

@@ -16,13 +16,13 @@ using UnityEngine;
 using System.Drawing;
 using System.Collections;
 using UnityEngine.Networking;
-using static WorldManager;
+
 
 
 namespace AmongUsNS
 {
 
-    [BepInPlugin("Crisis : Among Us", "Among Us", "1.0.0")]
+    [BepInPlugin("Crisis_Among_Us", "Crisis : Among Us", "1.0.0")]
     [BepInDependency("BerryLoader")]
     class AmongUs : BaseUnityPlugin
     {
@@ -37,6 +37,7 @@ namespace AmongUsNS
         public static bool AU_TravelerCanAppear;
         public static bool AU_OasisKilled;
         public static int AU_FriendlyTraveler;
+        public static bool AU_First_Infect;
 
         private void Awake()
         {
@@ -45,7 +46,7 @@ namespace AmongUsNS
             L.LogInfo("They're among us");
             harmonyinstance = new Harmony("AmongUs");
             harmonyinstance.PatchAll(typeof(Pacthes));
-            LocAPI.LoadTsvFromFile(Path.Combine(Mypath, "AmongUs_Loc.txt"));
+            LocAPI.LoadTsvFromFile(Path.Combine(Mypath,"Loc", "AmongUs_Loc.tsv"));
             InteractionAPI.CreateCardTypeInteraction(CardType.Resources, (CardData instance, CardData otherCard, ref bool? result) =>
             {
                 if (otherCard is Spell)
@@ -141,7 +142,7 @@ namespace AmongUsNS
             
 
             Dictionary<string, string> field = AccessTools.Field(typeof(Subprint), "specialCardIds").GetValue(typeof(Subprint)) as Dictionary<string, string>;
-            field.Add("saunaland_dummy_magic_user", "wizard|mage");
+            field.Add("amongus_dummy_magic_user", "wizard|mage");
             AccessTools.Field(typeof(Subprint), "specialCardIds").SetValue(typeof(Subprint), field);
 
 

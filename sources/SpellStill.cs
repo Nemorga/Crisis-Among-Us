@@ -15,19 +15,8 @@ namespace AmongUsNS
     {
         
 
-        public override SpellTargets Targets => base.Targets = new SpellTargets { ByType = typeof(Mob) };
-        protected override void Awake()
-        {
-            base.Awake();
-          
-        }
-
-
-        public override void Clicked()
-        {
-            base.Clicked();
-          
-        }
+        public override SpellTargets Targets => new SpellTargets { ByType = typeof(Mob) };
+      
         protected override bool CanHaveCard(CardData otherCard)
         {
             if (otherCard.Id == "iron_bar")

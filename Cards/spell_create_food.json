@@ -1,7 +1,9 @@
 {
     "id": "amongus_spell_create_food",
-    "nameOverride": "<i><b>Dolafa'Re</b></i> ",
-    "descriptionOverride": "Produit une bonne quantité de nourriture.\n<b>Double-cliquez pour activer.</b>",
+    "nameOverride": "",
+    "descriptionOverride": "",
+    "nameTerm": "card_amongus_spell_create_food_name",
+    "descriptionTerm": "card_amongus_spell_create_food_description",
     "value": -1,
     "type": "resources",
     "icon": "card_spell_food.png",

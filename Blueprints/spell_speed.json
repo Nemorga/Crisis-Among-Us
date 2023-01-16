@@ -1,7 +1,7 @@
 {
     "id": "blueprint_amongus_spellspeed",
-    "nameOverride": "Idée: Fasi'Mire",
-    "nameTerm": "",
+    "nameOverride": "",
+    "nameTerm": "card_amongus_spell_speed_name",
     "group": "resources",
     "icon": "card_spell_speed.png",
     "stackText": "",
@@ -16,8 +16,8 @@
             "resultCard": "amongus_spell_speed",
             "extraResultCards": "",
             "time": 15,
-            "statusOverride": "Mise au point d'un sortilège...",
-            "statusTerm": ""
+            "statusOverride": "",
+            "statusTerm": "idea_amongus_spell_status"
         }
     ]
 }

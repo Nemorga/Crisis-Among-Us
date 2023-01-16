@@ -1,7 +1,7 @@
 {
     "id": "blueprint_amongus_spellkill",
-    "nameOverride": "Idée: Sisol'Sifa",
-    "nameTerm": "",
+    "nameOverride": "",
+    "nameTerm": "card_amongus_spell_kill_name",
     "group": "resources",
     "icon": "card_spell_kill.png",
     "stackText": "",
@@ -16,8 +16,8 @@
             "resultCard": "amongus_spell_kill",
             "extraResultCards": "",
             "time": 10,
-            "statusOverride": "Mise au point d'un sortilège...",
-            "statusTerm": ""
+            "statusOverride": "",
+            "statusTerm": "idea_amongus_spell_status"
         }
     ]
 }

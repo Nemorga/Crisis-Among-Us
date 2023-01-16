@@ -10,7 +10,7 @@ using System.Text;
 using Unity.Profiling;
 using UnityEngine;
 using UnityEngine.TextCore.LowLevel;
-using static UnityEngine.GraphicsBuffer;
+
 
 namespace AmongUsNS
 {
@@ -23,7 +23,7 @@ namespace AmongUsNS
         public string ToSaveType="";
         [ExtraData("thing_stage")]
         public int Stage = 1;
-        [ExtraData("thing_action_modifier")]
+        [ExtraData("thing_action_time")]
         public float ActionTime = 120f;
         [ExtraData("thing_timer")]
         public float TimerToAction;
@@ -81,6 +81,7 @@ namespace AmongUsNS
         }
         public override void OnUnequipItem(Equipable equipable)
         {
+            
             Equipable GetOverrideEquipable = GetAllEquipables().FirstOrDefault((Equipable x) => !string.IsNullOrEmpty(x.VillagerTypeOverride));
             if ( GetOverrideEquipable == null && FalseId != "villager" && FalseId != "friendly_pirate" && FalseId != "dog")
             {
@@ -221,7 +222,7 @@ namespace AmongUsNS
                 case ThingType.Disruptor:
                 case ThingType.Assimilator:
                     {
-                        List<string> forbiden= new List<string> {"dog", "amongus_created_skeleton" };
+                        List<string> forbiden= new List<string> {"dog", "amongus_created_skeleton", "trained_monkey" };
                         List<Villager> villagers = WorldManager.instance.GetCards<Villager>().Where(x => x is not TheThing && !forbiden.Contains(x.Id)).ToList();
                         
                         float num = 10f;
@@ -328,7 +329,6 @@ namespace AmongUsNS
             int agressors = allthing.Where(x => x.thingType == ThingType.Aggressor).Count();
             int contaminators = allthing.Where(x => x.thingType == ThingType.Contaminator).Count();
             int disruptors = allthing.Where(x => x.thingType == ThingType.Disruptor).Count();
-            //Sauna.L.LogWarning("COUNT   TT= " + things +"| Assim = "+assimilator+"| Sabo = " + saboteurs + "\n Cont= " + contaminators + "| Aggro = " + agressors+" Disru = "+disruptors+"\n Thing/3= "+(float)(things/3.5f));
             if (assimilator <=things/4f)
             { 
                 thingType= ThingType.Assimilator;
@@ -336,15 +336,12 @@ namespace AmongUsNS
             }
             else
             { 
+                //Yeah those are stupide formulas but they're the only ones I was kinda happy with :<
                 WeightedRandomBag<ThingType> bag = new WeightedRandomBag<ThingType>();
                 bag.AddEntry(ThingType.Saboteur, (float)((contaminators + agressors+ disruptors) * (contaminators + agressors+disruptors) + 1) / ((saboteurs * saboteurs) + 2));
-                //Sauna.L.LogWarning("Sab Weight= "+ (float)((contaminators + agressors + disruptors) * (contaminators + agressors + disruptors) + 1) / ((saboteurs * saboteurs) + 2));
                 bag.AddEntry(ThingType.Contaminator, (float)((saboteurs + agressors + disruptors) * (saboteurs + agressors + disruptors) + 1) / ((contaminators * contaminators) + 4));
-                //Sauna.L.LogWarning("Cont Weight= " + (float)((saboteurs + agressors + disruptors) * (saboteurs + agressors + disruptors) + 1) / ((contaminators * contaminators) + 2));
                 bag.AddEntry(ThingType.Aggressor, (float)((contaminators + saboteurs + disruptors) * (contaminators + saboteurs + disruptors) + 1) / ((agressors * agressors) + 2));
-                //Sauna.L.LogWarning("Aggro Weight= " + (float)((contaminators + saboteurs + disruptors) * (contaminators + saboteurs + disruptors) + 1) / ((agressors * agressors) + 3));
                 bag.AddEntry(ThingType.Disruptor, (float)((contaminators + saboteurs + agressors) * (contaminators + saboteurs + agressors) + 1) / ((disruptors * disruptors) + 3));
-                //Sauna.L.LogWarning("Disru Weight= " + (float)((contaminators + saboteurs + agressors) * (contaminators + saboteurs + agressors) + 1) / ((disruptors * disruptors) + 4));
                 thingType= bag.Choose();
             }
             ToSaveType = thingType.ToString();
@@ -355,11 +352,11 @@ namespace AmongUsNS
             GameCanvas.instance.SetScreen(GameCanvas.instance.CutsceneScreen);
             AudioManager.me.PlaySound2D(AmongUs.MyAudioClips["SL_fire"], UnityEngine.Random.Range(0.7f, 1f), 0.4f);
             GameCamera.instance.TargetPositionOverride = building.transform.position;
-            Cutscenes.Title = "Au feu!";
-            Cutscenes.Text = "Quelqu'un a mis le feu à ce batiment! Vite, envoyez un villageois éteindre les flammes avant qu'il ne soit trop tard!";
+            Cutscenes.Title = SokLoc.Translate("label_amongus_cs_thing_setfire_title");
+            Cutscenes.Text = SokLoc.Translate("label_amongus_cs_thing_setfire_text");
             yield return new WaitForSeconds(0.2f);
             building.CardData.AddStatusEffect(new StatusEffect_Fire() {FireTimer= Stage*5});
-            yield return Cutscenes.WaitForContinueClicked("Oh non!");
+            yield return Cutscenes.WaitForContinueClicked(SokLoc.Translate("label_uh_oh"));
             Cutscenes.Text = "";
             Cutscenes.Title = "";
             GameCamera.instance.TargetPositionOverride = null;
@@ -383,11 +380,12 @@ namespace AmongUsNS
             TheThing newthing = (TheThing)WorldManager.instance.GameDataLoader.GetCardFromId("amongus_the_thing");
             newthing.FalseId = target.Id;
             newthing.InheritCombatStatsFrom = target.Id == "friendly_pirate" ? "pirate" : "villager";
-            string nameoverride = (string)AccessTools.Field(typeof(CardData), "nameOverride").GetValue(target);
-            if (!string.IsNullOrEmpty(nameoverride))
-                AccessTools.Field(typeof(CardData), "nameOverride").SetValue(newthing, nameoverride);
+            
             newthing.HealthPoints = target.HealthPoints;
             TheThing created = (TheThing)WorldManager.instance.CreateCard(target.MyGameCard.transform.position, newthing, true, false, false, false);
+            string nameoverride = (string)AccessTools.Field(typeof(CardData), "nameOverride").GetValue(target);
+            if (!string.IsNullOrEmpty(nameoverride))
+                AccessTools.Field(typeof(CardData), "nameOverride").SetValue(created, nameoverride);
             created.MyGameCard.UpdateIcon();
             created.StatusEffects= target.StatusEffects;
             foreach(StatusEffect status in target.StatusEffects)
@@ -428,8 +426,8 @@ namespace AmongUsNS
             {
                 GameCanvas.instance.SetScreen(GameCanvas.instance.CutsceneScreen);
             }
-            Cutscenes.Text = "Le villageois était un monstre! Il se transforme...";
-            yield return Cutscenes.WaitForContinueClicked("Oh non!");
+            Cutscenes.Text = SokLoc.Translate("label_amongus_cs_thing_reveal");
+            yield return Cutscenes.WaitForContinueClicked(SokLoc.Translate("label_uh_oh"));
             Cutscenes.Text = "";
             AudioManager.me.PlaySound2D(AmongUs.MyAudioClips["SL_reveal"], UnityEngine.Random.Range(0.6f, 1.5f), UnityEngine.Random.Range(0.15f, 0.3f));
 
@@ -458,10 +456,10 @@ namespace AmongUsNS
 
             GameCanvas.instance.SetScreen(GameCanvas.instance.CutsceneScreen);
             AudioManager.me.PlaySound2D(AmongUs.MyAudioClips["SL_reveal_all"], 0.7f, 0.2f);
-            Cutscenes.Title = "Une invasion!";
-            Cutscenes.Text = "Un grand nombre de villageois étaient des monstre et ils attaquent!";
-            yield return Cutscenes.WaitForContinueClicked("Oh non!");
-            Cutscenes.Text = "Les villageois se transforment...";
+            Cutscenes.Title = SokLoc.Translate("label_amongus_cs_thing_invasion_title");
+            Cutscenes.Text = SokLoc.Translate("label_amongus_cs_thing_invasion_text");
+            yield return Cutscenes.WaitForContinueClicked(SokLoc.Translate("label_uh_oh"));
+            Cutscenes.Text = SokLoc.Translate("label_amongus_cs_things_reveal_all");
             foreach(TheThing thing in things) 
             {
                 GameCamera.instance.TargetPositionOverride = thing.MyGameCard.transform.position;

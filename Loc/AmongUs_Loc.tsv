@@ -1,0 +1,126 @@
+Term	English	French
+statuseffect_amongus_SE_Still_lore	Stay!	Pas bouger !
+statuseffect_amongus_SE_Still_name	Immobilized	Immobilisé
+statuseffect_amongus_SE_Still_description	This creature cannot move anymore	Cette créature ne peut plus bouger
+statuseffect_amongus_SE_Giant_lore	Go... Goliath?	Go...Goliath ?
+statuseffect_amongus_SE_Giant_name	Giantism	Gigantisme
+statuseffect_amongus_SE_Giant_description	This creature takes more space and can hit all its ennemies in one sweep!	Cette créature prend plus de place et a des chances de frapper tous les ennemis!
+statuseffect_amongus_SE_FireFighter_name	Firefighting	Incendie combattu
+statuseffect_amongus_SE_FireFighter_lore	In hot water	Chaud devant !
+statuseffect_amongus_SE_FireFighter_description	Putting his life on the line, the villager is doing his best to extinguish the fire	Le villageois fait tout ce qu'il peut pour arrêter l'incendie au péril de sa vie.
+statuseffect_amongus_SE_Fire_name	Fire	Incendie
+statuseffect_amongus_SE_Fire_lore	This is fine	Néron serait fier !
+statuseffect_amongus_SE_Fire_description	This building is on fire and will be destroyed if nothing is done	Ce batiment est en feu et sera détruit si rien n'est fait
+statuseffect_amongus_SE_contaminate_name	Infected	Contaminé
+statuseffect_amongus_SE_contaminate_lore	Eeeww!	Beurk !
+statuseffect_amongus_SE_contaminate_description	This animal is infected and will periodically give birth to monsters, Maybe you should put it down?	Cet animal est contaminé et va donner vie à des ennemis de façon périodique, peut-être faudrait-il l'abbatre?
+statuseffect_amongus_SE_Revealed_name	Monster	Monstre
+statuseffect_amongus_SE_Revealed_lore	How Long Were You Alone With That Dog?	How Long Were You Alone With That Dog ?
+statuseffect_amongus_SE_Revealed_description	This is not a villager, it's a monster.<b>Double-click to force it to reveal itself.!</b>	Ce villageois n'en est pas un et est un monstre.<b>Double cliquez pour le forcer à se révéler</b> !
+statuseffect_amongus_SE_Normal_name	Villager	Villageois
+statuseffect_amongus_SE_Normal_lore	Grrrrrr! What? That wasn't funny?	Grrrrrrr ! Quoi ? C'est pas drôle ?
+statuseffect_amongus_SE_Normal_description	This is a normal villager	Ce villageois est bien un villageois.
+statuseffect_amongus_SE_Boss_name	Boss	Boss
+statuseffect_amongus_SE_Boss_lore	It looks tough.	Grrrrrrr ! Ca a l'air costaud, non ?
+statuseffect_amongus_SE_Boss_description	Beware! This monster is a boss and will switch between phases that will change its behavior and trigger events.	Ce monstre est un boss et va passer par plusieur phases qui vont changer son comportement et déclencher des évènement, faites attention.
+booster_amongus_magicbooster	Magic and Power	Magie et Pouvoir
+card_amongus_created_skeleton_name	Animated skeleton	Squelette animé
+card_amongus_created_skeleton_description	An obedient undead created by necromancy	Un mort-vivant esclave créé par nécromancie
+card_amongus_pulsating_heart_name	Pounding cankerous heart	Coeur chancreux palpitant
+card_amongus_pulsating_heart_description	One of the heart of those creatures, still intact and pounding. If examinated by a mage or wizard, it may reveal the source of the invasion 	Un des coeurs d'une de ces créatures, encore intacte et palpitant. Peut-être que si un de vos mage ou sorcier l'examinait vous pouriez trouver la source de l'invasion ?
+card_amongus_rumor_thething_name	The Thing	La Chose
+card_amongus_rumor_thething_description	A strange creature is infecting your villager, changing them into monster. There must be something to do about it... Perhaps if you kill more of those monsters, you'll learn more about the Thing	Une créature étrange a commencé à infécter vos villegois et à les transformer en monstres. Il ya sûrement quelque chose à faire... Peu-être qu'en en tuant plus vous en apprendrez plus sur cette créature
+card_amongus_spell_basic_name	<i><b>Dosisol'Re</b></i>	<i><b>Dosisol'Re</b></i>
+card_amongus_spell_basic_description	A basic spell that every magic user learn: not particularly useful but can (un)tidy your room.<i>Must have some use...</i>	Le sort de base qu'apprend tout magicien : n'est pas très utile mais peut (dé)ranger votre chambre.<i>Doit bien servir à quelque-chose...</i>
+card_amongus_spell_bettercleanse_name	<i><b>Fami'Mi'la'Misol</b></i>	<i><b>Fami'Mi'la'Misol</b></i>
+card_amongus_spell_bettercleanse_description	Remove all negative status effects afflicting the target and keep the positive ones	Supprime tous les états anormaux négatifs affligeant la cible mais préserve ceux qui sont positifs.
+card_amongus_spell_cleanse_name	<i><b>Fami'Mi'la</b></i> 	<i><b>Fami'Mi'la</b></i> 
+card_amongus_spell_cleanse_description	Remove ALL status effects on the target, positive AND negative.	Supprime tous les états anormaux affligeant la cible (négatifs ET positifs)
+card_amongus_spell_create_food_name	<i><b>Dolafa'Re</b></i>	<i><b>Dolafa'Re</b></i>
+card_amongus_spell_create_food_description	Produce a good quantity of food.<b>Double-click to cast.</b>	Produit une bonne quantité de nourriture.<b>Double-cliquez pour activer.</b>
+card_amongus_spell_Feast_name	<i><b>Dosisolmi</b></i>	<i><b>Dosisolmi</b></i>
+card_amongus_spell_Feast_description	Used to create a feast that give the "well-fed" status to all your villagers.<b>Double-click to cast.</b>	Utilisé pour créer un festin qui donne à tous vos villageois l'effet "repu".<b>Double-cliquez pour activer.</b>
+card_amongus_spell_Giant_name	<i><b>Domifala</b></i>	<i><b>Domifala</b></i>
+card_amongus_spell_Giant_description	The target villager will grow to a giant size which will give him a big advantage in a fight.	Fait grandir un villageois jusqu'à une taille de géant pendant 30 secondes, ce qui lui donne un net avantage en combat
+card_amongus_spell_Heal_name	<i><b>Fa'Rerela</b></i>	<i><b>Fa'Rerela</b></i>
+card_amongus_spell_Heal_description	Completly heals a villager... and that's not too bad!	Permet de complètement soigner un villageois... et c'est déjà bien.
+card_amongus_spell_kill_name	<i><b>Sisol'Sifa</b></i>	<i><b>Sisol'Sifa</b></i>
+card_amongus_spell_kill_description	Death curse, will kill or damage a creature.	Malédiction de mort, inflige des dégât ou tue une créature.
+card_amongus_spell_reveal_name	<i><b>Misolmi'Sol</b></i>	<i><b>Misolmi'Sol</b></i>
+card_amongus_spell_reveal_description	For one moon, reveal if the villager is a monster or not.	Pendant une lune, révèle si le villageois ciblé est un monstre déguisé
+card_amongus_spell_reveal_all_name	<i><b>Milamisi</b></i>	<i><b>Milamisi</b></i>
+card_amongus_spell_reveal_all_description	For one moon, reveal if all villagers are monsters or not.<b>Double-click to cast.</b>	Pendant une lune, révèle si tous les villageois sont des monstres déguisés.<b>Double-cliquez pour activer.</b>
+card_amongus_spell_Skeleton_name	<i><b>Do'Resido</b></i>	<i><b>Do'Resido</b></i>
+card_amongus_spell_Skeleton_description	Trasnform a corpse into an animated skeleton that obey orders and return to its original state at the end of the current moon	Transforme un cadavre en squelette animé qui obéit aux ordres et retourne à l'état de cadrave à la fin de la lune en cours.
+card_amongus_spell_speed_name	<i><b>Fasi'Mire</b></i>	<i><b>Fasi'Mire</b></i>
+card_amongus_spell_speed_description	Greatly increase harvest or building speed to such an extend that it is almost instantaneous.	Augmente drastiquement la vitesse de récolte ou de construction, au point de la rendre instantanée
+card_amongus_spell_still_name	<i><b>Fado'Dofa</b></i>	<i><b>Fado'Dofa</b></i>
+card_amongus_spell_still_description	Make an ennemy unable to move on the board for a short time	Rend un ennemi ou un animal immobile, incapable de bouger pendant un certain temps.
+card_amongus_strange_traveler_name	Strange Traveler	Voyageur étrange
+card_amongus_strange_traveler_description	A vagrant who recently arrived among your community. What does he want?	Un vagabond qui s'est invité parmis vous, que veut-il donc ?
+card_amongus_the_thing1_name	Monstrosity	Monstruosité
+card_amongus_the_thing_description	A monster who took a villager guise.	Un monstre qui a pris la place d'un villageois.
+card_amongus_the_thing2_name	Aberration	Aberration
+card_amongus_the_thing3_name	Horror	Horreur
+card_amongus_the_thing4_name	Abomination	Abomination
+card_amongus_fangeux_name	Mudling	Fangeux
+card_amongus_grouillant_name	Swarmling	Grouillant
+card_amongus_vermine_name	Vermin	Vermine
+card_amongus_little_description	A small amalgam of flesh and animal parts miserably put together	Un petit amalgame de chairs et de morceaux d'animaux assemblé lamentablement.
+card_amongus_boss_name	The Other	L'Autre
+card_amongus_boss_description	The Thing, the entity responsible for all the evils that befell your community	La Chose, l'entité responsable des maux qui vous accablent
+card_amongus_dummy_magic_user_name	Wizard or Mage	Sorcier ou Magicien
+card_amongus_dummy_magic_user_description	You shouldn't be able to read this!	Comment pouvez vous lire ceci ?
+idea_amongus_spell_status	Making a spell....	Mise au point d'un sortilège...
+label_amongus_cs_thingboss_victory	Victory	Victoire
+label_amongus_cs_thingboss_deaththroes	The Other seems defeated but, with a death rattle, fleshy purulent canker explode and splash your villagers with a deathly substance	L'Autre semble défaite mais, dans un râle d'agonie, des chancres charnus purulents explosent et aspergent vos villageois d'une substance délétère
+label_amongus_cs_thingboss_tremble	All the Other's body start to shake, twist and wave... 	Tout le corps de l'Autre se met à trembler et à s'agiter de remous...
+label_amongus_cs_hum	Uh ?	Hum?
+label_amongus_cs_thingboss_death	And in a last rush of blood and flesh, the horror that is the Other explode.	Et dans un élan final l'horreur qu'est l'Autre explose.
+label_amongus_cs_good	Good ridance!	Bon débarras!
+label_amongus_cs_allylost	Loss of allies	Perte d''alliés
+label_amongus_cs_fightertransform	The Other makes one single move and, among the fighters, all those who are infected by the Thing start transforming.	L'Autre fait un seul geste et, parmi les combattants, tous les villageois infectés par la Chose se transforment.
+label_amongus_cs_villagerstranform	The villagers are transforming...	Les villageois se transforment
+label_amongus_cs_ritual	A ritual ?	Un rituel ?
+label_amongus_cs_ritual_text	The villager thinks he can do a ritual that will summon the entity responsible for the Thing invasion. Should he proceed?	Le villageois pense pouvoir faire un rituel qui appellera l'entité responsable de la prolifération de la chose. Doit-il le mener à bien ?
+label_amongus_cs_ritual_yes	Yes, let's get this done once and for all!	Oui, qu'on en finisse une bonne fois pour toute !
+label_amongus_cs_ritual_no	Eh... maybe not.	Euh...peut-être pas...
+label_amongus_cs_other_speak_title_1	The Thing appears	La Chose apparait
+label_amongus_cs_other_speak_text_1	"<i>What! Why? How! You dare to summon me here? Do you think that your little community is more important than any other?</i>"	"<i>Mais? Quoi ? Comment ? Vous osez m'invoquer ici ? Pensez-vous que votre petite communauté est plus importante qu'une autre ?</i>"
+label_amongus_cs_other_speak_title_2	The Thing talks:	La Chose parle :
+label_amongus_cs_other_speak_text_2	"<i>You are nothing, a grain of sand lost in a dune from an infinite desert. Eternally stuck in a liminal state before the true fulfilment and the apotheosis therein.</i>"	"<i>Vous n'êtes rien, un grain de sable perdu dans une dune d'un désert infini. Coincé éternellement dans état liminaire avant la vraie réalisation et l'apothéose de l'existence.</i>"
+label_amongus_cs_other_speak_title_3	The Thing soliloquizes:	La Chose soliloque :
+label_amongus_cs_other_speak_text_3	"<i>I gather that you think of me as the malevolence behind the infestation that besets your village. I am not. I am One, I am many, I am the Thing, I am the Other. I AM the infestation.</i>"	"<i>Vous pensez surement que suis responsable de l'infestation qui vous accable. Il n'en est rien. Je suis une, je suis l'ensemble, je suis la Chose, je suis l'Autre. Je SUIS l'infestation.</i>"
+label_amongus_cs_other_speak_title_4	The Other monologues	L'Autre monologue :
+label_amongus_cs_other_speak_text_4	"<i>But, I am not an enemy. I do not exist to destroy you. I came to be to save you, forever, through me, in me, as my peers, my kind.</i>"	"<i>Mais je ne suis pas une ennemie. Je ne suis pas là pour vous détruire. Je suis là pour vous sauvegarder, à jamais, à travers moi, en moi, comme mes pareils, mes semblables.</i>"
+label_amongus_cs_other_speak_title_5	The Other is still going :	L'Autre continue, encore :
+label_amongus_cs_other_speak_text_5	"<i>It may be that you thought yourselves replaced by monster. Far from the truth : you only join a whole greater than the sum of its parts. It is you, weak and alone, that are monster.</i>"	"<i>Vous vous pensez peut-être remplacés par des monstres, non : vous rejoignez un tout plus grand que la sommes de ses parties. C'est vous, faibles et isolés, qui êtes des monstres.</i>"
+label_amongus_cs_other_speak_title_6	The Other cannot be stopped:	L'Autre est inarrétable :
+label_amongus_cs_other_speak_text_6	"<i>And when one of you join me, he becomes another and more than before. He becomes important. More than a grain of sand, more than a dune, he becomes the Desert.</i>"	"<i>Et quand l'un de vous se joint à moi, il devient autre et beaucoup plus qu'il ne l'était à l'origine. Il devient important. Plus qu'un grain de sable, plus qu'une dune, il devient le désert.</i>"
+label_amongus_cs_other_speak_title_7	The Other ends, finaly:	L'Autre finit, enfin :
+label_amongus_cs_other_speak_text_7	"<i>Then I shall grant you a favor. We shall speed up the process: you will cease your vain existence and join the Other to actualy become as important as the whole you are a part of.</i>"	"<i>Alors, je vais vous faire une faveure. Et nous allons expédier les choses, vous cesserez votre existence vaine, et rejoindrez l'Autre, et serez enfin aussi important que le tout auquel vous appartenez.</i>"
+label_amongus_cs_other_speak_answer_1	Uh ?	Heuuuu ?
+label_amongus_cs_other_speak_answer_2	Ah ?	Ah ?
+label_amongus_cs_other_speak_answer_3	But..	Mais !
+label_amongus_cs_other_speak_answer_4	Oh ?	Oh ?
+label_amongus_cs_other_speak_answer_5	Well, it's....	C'est à d- ...
+label_amongus_cs_other_speak_answer_6	Mayhaps, bu-...	Peut-être, m- ...
+label_amongus_cs_other_speak_answer_7	Allright, then!	Bon !
+label_amongus_cs_thing_setfire_title	Fire ! 	Au feu !
+label_amongus_cs_thing_setfire_text	Somebody put this building on fire. Quickly, send a villager to extinguish the flames before it's too late!	Quelqu'un à mis le feu à ce bâtiment ! Vite, envoyez un villageois éteindre les flammes avant qu'il ne soit trop tard !
+label_amongus_cs_thing_reveal	This villager was a monster ! He is changing shape...	Ce villageois était un monstre ! Il se tranforme...
+label_amongus_cs_thing_invasion_title	An invasion !	Une invasion !
+label_amongus_cs_thing_invasion_text	A good number of villagers were monsters and they are attacking!	Un grand nombre de villageois étaient des monstres et ils attaquent !
+label_amongus_cs_things_reveal_all	The villagers are changing shape...	Les villageois se transforment....
+label_amongus_cs_traveler	The traveler	Le voyageur
+label_amongus_cs_traveler_reward	Seemingely satisfied by your hospitality, the traveler is rewarding you !	Semble-t-il satisfait de votre hospitalité, le voyageur vous récompense !
+label_amongus_cs_traveler_leave	And without a word, the strange traveler leave towards the unknown	Sans un mot le voyageur s'en va comme il est venu, vers l'inconnu.
+label_amongus_cs_farwell	Farwell!	Et bon voyage !
+label_amongus_cs_traveler_arrival	A strange traveler has just arrived. What's to do with him	Un étrange voyageur vient d'arriver, que faire ?
+label_amongus_cs_traveler_answer_yes	He is welcome here !	Il est le bienvenu ici !
+label_amongus_cs_traveler_answer_no	He shall leave, at once !	Qu'il s'en aille !
+label_amongus_cs_traveler_refuse	He refuses to leave !	Il refuse de partir !
+label_amongus_cs_what	What ?!	Quoi ?!
+label_amongus_cs_traveler_grateful	The traveler is grateful and makes himself at home in your community.	Le voyageur exprime sa gratitude et prend ses aises dans votre communauté.
+label_amongus_cs_allright	Allright.	Très bien.
+label_amongus_spell_charge	<i>Currently has [charge] of [chargemax] charges.</i>	<i>A actuellement [charge] charges sur [chargemax].</i>

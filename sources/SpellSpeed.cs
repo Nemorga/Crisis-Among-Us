@@ -16,19 +16,8 @@ namespace AmongUsNS
         string SaveActionID;
         string SaveBpId;
 
-        public override SpellTargets Targets => base.Targets = new SpellTargets { HasStatus = true, ForbidenIds = new string[]{ "kid","strange_portal", "chicken","egg"}  };
-        protected override void Awake()
-        {
-            base.Awake();
-          
-        }
-
-
-        public override void Clicked()
-        {
-            base.Clicked();
-          
-        }
+        public override SpellTargets Targets => new SpellTargets { HasStatus = true, ForbidenIds = new string[]{ "kid","strange_portal", "chicken","egg"}  };
+    
         protected override bool CanHaveCard(CardData otherCard)
         {
             if (otherCard.Id == "iron_bar")

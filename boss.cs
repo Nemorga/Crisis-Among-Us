@@ -18,26 +18,8 @@ namespace AmongUsNS
         public int[] bossphasehp;
         public string[] immunities;
      
-        protected override void Awake()
-        {
-            
-            base.Awake();
-            
-            
-            
-            
-        }
-
-        public override void Clicked()
-        {
-            
-            base.Clicked();
-        }
-        public override void Die()
-        {
-            
-            base.Die();
-        }
+       
+      
         public virtual void DeathThroes(int Range, int Power, bool DoDamage = true, string[] status_effects = null, Action otherstuff = null)
         {
             if (!InConflict)
@@ -123,8 +105,7 @@ namespace AmongUsNS
             if (InConflict && !HasStatusEffectOfType<BossFight>())
                 AddStatusEffect(new BossFight());
             base.UpdateCard();
-            string desc = Description.Replace("---MISSING---", "Un monstre qui a pris la place d'un villageois");
-            descriptionOverride = desc;
+            
 
 
             

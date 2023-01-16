@@ -1,7 +1,7 @@
 {
     "id": "blueprint_amongus_spellreveal",
-    "nameOverride": "Idée: Misolmi'Sol",
-    "nameTerm": "",
+    "nameOverride": "",
+    "nameTerm": "card_amongus_spell_reveal_name",
     "group": "resources",
     "icon": "card_reveal.png",
     "stackText": "",
@@ -16,8 +16,8 @@
             "resultCard": "amongus_spell_reveal",
             "extraResultCards": "",
             "time": 20,
-            "statusOverride": "Mise au point d'un sortilège...",
-            "statusTerm": ""
+            "statusOverride": "",
+            "statusTerm": "idea_amongus_spell_status"
         }
     ]
 }

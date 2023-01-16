@@ -1,7 +1,9 @@
 {
     "id": "amongus_the_thing1",
-    "nameOverride": "Monstruosité",
-    "descriptionOverride": "Un monstre qui a pris la place d'un villageois",
+    "nameOverride": "",
+    "descriptionOverride": "",
+    "nameTerm": "card_amongus_the_thing1_name",
+    "descriptionTerm": "card_amongus_the_thing_description",
     "value": -1,
     "type": "mobs",
     "icon": "card_thing1.png",

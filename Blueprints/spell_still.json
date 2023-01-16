@@ -1,7 +1,7 @@
 {
     "id": "blueprint_amongus_spellstilll",
-    "nameOverride": "Idée: Fado'Dofa",
-    "nameTerm": "",
+    "nameOverride": "",
+    "nameTerm": "card_amongus_spell_still_name",
     "group": "resources",
     "icon": "card_spell_still.png",
     "stackText": "",
@@ -16,8 +16,8 @@
             "resultCard": "amongus_spell_still",
             "extraResultCards": "",
             "time": 10,
-            "statusOverride": "Mise au point d'un sortilège...",
-            "statusTerm": ""
+            "statusOverride": "",
+            "statusTerm": "idea_amongus_spell_status"
         }
     ]
 }

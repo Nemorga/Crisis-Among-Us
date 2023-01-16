@@ -1,7 +1,9 @@
 {
     "id": "amongus_spell_Giant",
-    "nameOverride": "<i><b>Domifala</b></i> ",
-    "descriptionOverride": "Fait grandir un villageois jusqu'à une taille de géant pendant 30 secondes, ce qui lui donne un net avantage en combat",
+    "nameOverride": "",
+    "descriptionOverride": "",
+    "nameTerm": "card_amongus_spell_Giant_name",
+    "descriptionTerm": "card_amongus_spell_Giant_description",
     "value": -1,
     "type": "resources",
     "icon": "card_spell_giant.png",

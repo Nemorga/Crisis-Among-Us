@@ -16,20 +16,9 @@ namespace AmongUsNS
     {
         
 
-        public override SpellTargets Targets => base.Targets = all ? new SpellTargets() : new SpellTargets { ByType = typeof(Villager) };
+        public override SpellTargets Targets =>  all ? new SpellTargets() : new SpellTargets { ByType = typeof(Villager) };
         public bool all= false;
-        protected override void Awake()
-        {
-            base.Awake();
-          
-        }
-
-
-        public override void Clicked()
-        {
-            base.Clicked();
-          
-        }
+      
         public override void DoubleClicked()
         {
             if (all) 

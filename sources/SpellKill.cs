@@ -15,19 +15,8 @@ namespace AmongUsNS
         public int DoDamage = 0;
         
 
-        public override SpellTargets Targets => base.Targets = new SpellTargets { ByType = typeof(Combatable) };
-        protected override void Awake()
-        {
-            base.Awake();
-          
-        }
-
-
-        public override void Clicked()
-        {
-            base.Clicked();
-          
-        }
+        public override SpellTargets Targets =>  new SpellTargets { ByType = typeof(Combatable) };
+    
         protected override bool CanHaveCard(CardData otherCard)
         {
             if (otherCard.Id == "bone")

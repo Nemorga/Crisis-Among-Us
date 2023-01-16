@@ -8,6 +8,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
     <RepositoryUrl>https://github.com/Nemorga/Crisis-Among-Us</RepositoryUrl>
+    <RootNamespace>AmongUsNS</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -45,5 +46,9 @@
 
   <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Loc\" />
   </ItemGroup>
 </Project>

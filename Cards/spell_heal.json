@@ -1,7 +1,9 @@
 {
     "id": "amongus_spell_Heal",
-    "nameOverride": "<i><b>Fa'Rerela</b></i> ",
-    "descriptionOverride": "Permet de complètement soigner un villageois... et c'est déjà bien.",
+    "nameOverride": "",
+    "descriptionOverride": "",
+    "nameTerm": "card_amongus_spell_Heal_name",
+    "descriptionTerm": "card_amongus_spell_Heal_description",
     "value": -1,
     "type": "resources",
     "icon": "card_healing_spell.png",

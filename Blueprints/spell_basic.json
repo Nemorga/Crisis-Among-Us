@@ -1,7 +1,7 @@
 {
     "id": "blueprint_amongus_basicspell",
-    "nameOverride": "Idée: Dosisol'Re",
-    "nameTerm": "",
+    "nameOverride": "",
+    "nameTerm": "card_amongus_spell_basic_name",
     "group": "resources",
     "icon": "card_basic_spell.png",
     "hideFromIdeasTab": false,
@@ -16,8 +16,8 @@
             "resultCard": "amongus_spell_basic",
             "extraResultCards": "",
             "time": 5,
-            "statusOverride": "Mise au point d'un sortilège...",
-            "statusTerm": ""
+            "statusOverride": "",
+            "statusTerm": "idea_amongus_spell_status"
         }
     ]
 }

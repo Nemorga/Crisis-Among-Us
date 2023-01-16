@@ -1,0 +1,216 @@
+{
+    "id": "amongus_magicbooster",
+    "nameOverride": "",
+    "nameTerm": "booster_amongus_magicbooster",
+    "minAchievementCount": 40,
+    "cost": 35,
+    "icon": "card_reveal_all.png",
+    "cardBags": [
+
+        {
+            "type": "Chances",
+            "cards": 1,
+            "setCardBag": "Animal",
+            "chances": [
+                {
+                    "id": "blueprint_amongus_spellkill",
+                    "chance": 50,
+                    "hasMaxCount": true,
+                    "maxCountToGive": 1,
+                    "Prerequisite": "blueprint_amongus_basicspell"
+                },
+                {
+                    "id": "blueprint_amongus_spellstilll",
+                    "chance": 50,
+                    "hasMaxCount": true,
+                    "maxCountToGive": 1,
+                    "Prerequisite": "blueprint_amongus_basicspell"
+                },
+                {
+                    "id": "blueprint_amongus_spellheal",
+                    "chance": 50,
+                    "hasMaxCount": true,
+                    "maxCountToGive": 1,
+                    "Prerequisite": "blueprint_amongus_basicspell"
+                },
+                {
+                    "id": "blueprint_amongus_spellspeed",
+                    "chance": 30,
+                    "hasMaxCount": true,
+                    "maxCountToGive": 1,
+                    "Prerequisite": "blueprint_amongus_basicspell"
+                },
+                {
+                    "id": "blueprint_amongus_spellskeleton",
+                    "chance": 50,
+                    "hasMaxCount": true,
+                    "maxCountToGive": 1,
+                    "Prerequisite": "blueprint_amongus_basicspell"
+                },
+                {
+                    "id": "blueprint_amongus_spellgiant",
+                    "chance": 25,
+                    "hasMaxCount": true,
+                    "maxCountToGive": 1,
+                    "Prerequisite": "blueprint_amongus_basicspell"
+                },
+                {
+                    "id": "blueprint_amongus_spellfood",
+                    "chance": 30,
+                    "hasMaxCount": true,
+                    "maxCountToGive": 1,
+                    "Prerequisite": "blueprint_amongus_basicspell"
+                },
+                {
+                    "id": "blueprint_amongus_spellfeast",
+                    "chance": 15,
+                    "hasMaxCount": true,
+                    "maxCountToGive": 1,
+                    "Prerequisite": "blueprint_amongus_spellfood"
+                },
+                {
+                    "id": "blueprint_amongus_spellcleanse",
+                    "chance": 25,
+                    "hasMaxCount": true,
+                    "maxCountToGive": 1,
+                    "Prerequisite": "blueprint_amongus_basicspell"
+                },
+                {
+                    "id": "blueprint_amongus_spellbettercleanse",
+                    "chance": 15,
+                    "hasMaxCount": true,
+                    "maxCountToGive": 1,
+                    "Prerequisite": "blueprint_amongus_spellcleanse"
+                },
+                {
+                    "id": "blueprint_amongus_basicspell",
+                    "chance": 500,
+                    "hasMaxCount": true,
+                    "maxCountToGive": 1,
+                    "Prerequisite": ""
+                },
+                {
+                    "id": "magic_dust",
+                    "chance": 1,
+                    "hasMaxCount": false,
+                    "maxCountToGive": 1,
+                    "Prerequisite": "blueprint_amongus_basicspell"
+                }
+            ]
+        },
+        {
+            "type": "Chances",
+            "cards": 2,
+            "setCardBag": "Animal",
+            "chances": [
+                {
+                    "id": "magic_dust",
+                    "chance": 20,
+                    "hasMaxCount": false,
+                    "maxCountToGive": 1,
+                    "Prerequisite": ""
+                },
+                {
+                    "id": "empty_bottle",
+                    "chance": 25,
+                    "hasMaxCount": false,
+                    "maxCountToGive": 1,
+                    "Prerequisite": ""
+                },
+                {
+                    "id": "key",
+                    "chance": 15,
+                    "hasMaxCount": false,
+                    "maxCountToGive": 1,
+                    "Prerequisite": ""
+                },
+                {
+                    "id": "poop",
+                    "chance": 50,
+                    "hasMaxCount": false,
+                    "maxCountToGive": 1,
+                    "Prerequisite": ""
+                },
+                {
+                    "id": "flint",
+                    "chance": 75,
+                    "hasMaxCount": false,
+                    "maxCountToGive": 1,
+                    "Prerequisite": ""
+                },
+                {
+                    "id": "bone",
+                    "chance": 50,
+                    "hasMaxCount": false,
+                    "maxCountToGive": 1,
+                    "Prerequisite": ""
+                },
+                {
+                    "id": "stick",
+                    "chance": 30,
+                    "hasMaxCount": false,
+                    "maxCountToGive": 1,
+                    "Prerequisite": ""
+                },
+                {
+                    "id": "plank",
+                    "chance": 30,
+                    "hasMaxCount": false,
+                    "maxCountToGive": 1,
+                    "Prerequisite": ""
+                }
+            ]
+        },
+        {
+            "type": "Chances",
+            "cards": 1,
+            "setCardBag": "Animal",
+            "chances": [
+                
+                {
+                    "id": "amongus_spell_basic",
+                    "chance": 100,
+                    "hasMaxCount": false,
+                    "maxCountToGive": 1,
+                    "Prerequisite": ""
+                },
+                {
+                    "id": "amongus_spell_still",
+                    "chance": 50,
+                    "hasMaxCount": false,
+                    "maxCountToGive": 1,
+                    "Prerequisite": "blueprint_amongus_spellstilll"
+                },
+                {
+                    "id": "amongus_spell_Heal",
+                    "chance": 20,
+                    "hasMaxCount": false,
+                    "maxCountToGive": 1,
+                    "Prerequisite": "blueprint_amongus_spellheal"
+                },
+                {
+                    "id": "amongus_spell_cleanse",
+                    "chance": 15,
+                    "hasMaxCount": false,
+                    "maxCountToGive": 1,
+                    "Prerequisite": "blueprint_amongus_spellcleanse"
+                },
+                {
+                    "id": "amongus_spell_Skeleton",
+                    "chance": 30,
+                    "hasMaxCount": false,
+                    "maxCountToGive": 1,
+                    "Prerequisite": "blueprint_amongus_spellskeleton"
+                },
+                {
+                    "id": "amongus_spell_create_food",
+                    "chance": 10,
+                    "hasMaxCount": false,
+                    "maxCountToGive": 1,
+                    "Prerequisite": "blueprint_amongus_spellfood"
+                }
+            ]
+        }
+
+    ]
+}

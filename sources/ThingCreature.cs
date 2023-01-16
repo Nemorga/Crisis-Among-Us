@@ -14,20 +14,7 @@ namespace AmongUsNS
         
        
      
-        protected override void Awake()
-        {
-            base.Awake();
-            
-           
-            
-            
-        }
-
-        public override void Clicked()
-        {
-            
-            base.Clicked();
-        }
+      
         public override void Die()
         {
             List<Equipable> equipables = GetAllEquipables();
@@ -43,7 +30,7 @@ namespace AmongUsNS
                 }
             }
             AmongUs.AU_ThingKilled++;
-            if(AmongUs.AU_ThingKilled >= (5+(WorldManager.instance.CurrentMonth/20)))
+            if(AmongUs.AU_ThingKilled >= (7+(WorldManager.instance.CurrentMonth/20)))
             {
                 CardData card = WorldManager.instance.CreateCard(MyGameCard.transform.position, "amongus_pulsating_heart", true, false, true);
                 card.MyGameCard.SendIt();
@@ -53,13 +40,7 @@ namespace AmongUsNS
         }
        
         
-        public override void UpdateCard()
-        {
-            base.UpdateCard();
-            string desc = Description.Replace("---MISSING---", "Un monstre qui a pris la place d'un villageois");
-            descriptionOverride = desc;
-
-        }
+     
         
 
 
